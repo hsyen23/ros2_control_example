@@ -38,6 +38,7 @@
         <axis xyz="0.0 0.0 1.0"/>
         <parent link="base_link"/>
         <child link="arm_link"/>
+        <dynamics damping="0.02" friction="0.02"/>
     </joint>
 
     <link name = "arm_link">
@@ -60,4 +61,7 @@
             <origin xyz="0 0.55 0.025" rpy="${pi/2} 0 0"/>
         </xacro:inertial_box>
     </link>
+
+    <xacro:include filename="gazebo.xacro"/>
+
 </robot>
