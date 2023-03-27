@@ -7,6 +7,8 @@ source install/setup.bash
 ```
 
 # Display URDF model in rviz2
+![Alt text](picture/urdf_publishing_explanation.jpg "urdf_publishing_explanation")
+
 robot_model/robot_state_publisher_launch.py is a launch file to load urdf.xml to robot_state_publisher.
 
 ```
