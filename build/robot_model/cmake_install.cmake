@@ -46,6 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robot_model" TYPE DIRECTORY FILES
     "/home/user/ros2_control_example/src/robot_model/description"
     "/home/user/ros2_control_example/src/robot_model/launch"
+    "/home/user/ros2_control_example/src/robot_model/config"
     )
 endif()
 

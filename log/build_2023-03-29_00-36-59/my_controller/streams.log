@@ -1,0 +1,141 @@
+[0.010s] Invoking command in '/home/user/ros2_control_example/build/my_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/ros2_control_example/src/my_controller -DCMAKE_INSTALL_PREFIX=/home/user/ros2_control_example/install/my_controller
+[0.151s] -- The C compiler identification is GNU 11.3.0
+[0.268s] -- The CXX compiler identification is GNU 11.3.0
+[0.282s] -- Detecting C compiler ABI info
+[0.327s] -- Detecting C compiler ABI info - done
+[0.333s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.333s] -- Detecting C compile features
+[0.334s] -- Detecting C compile features - done
+[0.338s] -- Detecting CXX compiler ABI info
+[0.389s] -- Detecting CXX compiler ABI info - done
+[0.395s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.395s] -- Detecting CXX compile features
+[0.395s] -- Detecting CXX compile features - done
+[0.401s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.538s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.645s] -- Found control_msgs: 4.1.0 (/opt/ros/humble/share/control_msgs/cmake)
+[0.707s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.714s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.729s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.752s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.778s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.329s] -- Found controller_interface: 2.18.0 (/opt/ros/humble/share/controller_interface/cmake)
+[1.486s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.491s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.647s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.690s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.726s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.741s] -- Looking for pthread.h
+[1.808s] -- Looking for pthread.h - found
+[1.808s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.853s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.854s] -- Found Threads: TRUE  
+[2.088s] -- Found realtime_tools: 2.4.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[2.131s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[2.373s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.704s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.704s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/user/ros2_control_example/src/my_controller/include>
+[2.705s] -- Configured cppcheck exclude dirs and/or files: 
+[2.706s] -- Added test 'lint_cmake' to check CMake code style
+[2.707s] -- Added test 'uncrustify' to check C / C++ code style
+[2.707s] -- Configured uncrustify additional arguments: 
+[2.708s] -- Added test 'xmllint' to check XML markup files
+[2.710s] -- Configuring done
+[2.776s] -- Generating done
+[2.777s] -- Build files have been written to: /home/user/ros2_control_example/build/my_controller
+[2.785s] Invoked command in '/home/user/ros2_control_example/build/my_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/ros2_control_example/src/my_controller -DCMAKE_INSTALL_PREFIX=/home/user/ros2_control_example/install/my_controller
+[2.786s] Invoking command in '/home/user/ros2_control_example/build/my_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8
+[2.817s] [ 50%] [32mBuilding CXX object CMakeFiles/my_controller.dir/src/my_controller.cpp.o[0m
+[4.970s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:24:1:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ does not name a type
+[4.970s]    24 | [01;31m[KMyController[m[K::MyController() : controller_interface::ControllerInterface() {}
+[4.970s]       | [01;31m[K^~~~~~~~~~~~[m[K
+[4.971s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[4.971s]    27 |     [01;31m[KCallbackReturn[m[K MyController::on_init() {
+[4.971s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.973s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[4.973s]    41 |     [01;31m[KCallbackReturn[m[K MyController::on_configure(
+[4.973s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.973s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:99:50:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ has not been declared
+[4.973s]    99 |     controller_interface::InterfaceConfiguration [01;31m[KMyController[m[K::command_interface_configuration()
+[4.973s]       |                                                  [01;31m[K^~~~~~~~~~~~[m[K
+[4.973s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:100:5:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kcontroller_interface::InterfaceConfiguration my_controller::command_interface_configuration()[m[K’ cannot have cv-qualifier
+[4.973s]   100 |     [01;31m[Kconst[m[K
+[4.973s]       |     [01;31m[K^~~~~[m[K
+[4.976s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::InterfaceConfiguration my_controller::command_interface_configuration()[m[K’:
+[4.976s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:105:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_names_[m[K’ was not declared in this scope
+[4.976s]   105 |     command_interfaces_config.names.reserve([01;31m[Kjoint_names_[m[K.size());
+[4.976s]       |                                             [01;31m[K^~~~~~~~~~~~[m[K
+[4.980s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:107:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterface_name_[m[K’ was not declared in this scope
+[4.980s]   107 |     command_interfaces_config.names.push_back(joint + "/" + [01;31m[Kinterface_name_[m[K);
+[4.980s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.980s] 
+[4.980s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K At global scope:
+[4.981s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:113:50:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ has not been declared
+[4.981s]   113 |     controller_interface::InterfaceConfiguration [01;31m[KMyController[m[K::state_interface_configuration() const
+[4.981s]       |                                                  [01;31m[K^~~~~~~~~~~~[m[K
+[4.981s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:113:96:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kcontroller_interface::InterfaceConfiguration my_controller::state_interface_configuration()[m[K’ cannot have cv-qualifier
+[4.981s]   113 | erfaceConfiguration MyController::state_interface_configuration() [01;31m[Kconst[m[K
+[4.981s]       |                                                                   [01;31m[K^~~~~[m[K
+[4.981s] 
+[4.984s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::InterfaceConfiguration my_controller::state_interface_configuration()[m[K’:
+[4.984s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:118:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_names_[m[K’ was not declared in this scope
+[4.984s]   118 |     state_interfaces_config.names.reserve([01;31m[Kjoint_names_[m[K.size());
+[4.984s]       |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[4.988s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:120:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterface_name_[m[K’ was not declared in this scope
+[4.988s]   120 |       state_interfaces_config.names.push_back(joint + "/" + [01;31m[Kinterface_name_[m[K);
+[4.988s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.988s] 
+[4.990s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K At global scope:
+[4.990s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:146:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[4.990s]   146 |     [01;31m[KCallbackReturn[m[K MyController::on_activate(const rclcpp_lifecycle::State & /*previous_state*/)
+[4.990s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.991s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:158:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[4.991s]   158 |     [01;31m[KCallbackReturn[m[K MyController::on_deactivate(const rclcpp_lifecycle::State & /*previous_state*/)
+[4.991s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.991s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:165:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ has not been declared
+[4.991s]   165 |     [01;31m[KMyController[m[K::update(const rclcpp::Time &time,
+[4.991s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[4.995s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::return_type my_controller::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[4.995s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:167:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_command_[m[K’ was not declared in this scope
+[4.995s]   167 |     auto current_command = [01;31m[Kinput_command_[m[K.readFromRT();
+[4.995s]       |                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.999s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:169:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_interfaces_[m[K’ was not declared in this scope
+[4.999s]   169 |     for (size_t i = 0; i < [01;31m[Kcommand_interfaces_[m[K.size(); ++i) {
+[4.999s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.003s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:175:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope
+[5.003s]   175 |     if ([01;31m[Kstate_publisher_[m[K && state_publisher_->trylock()) {
+[5.003s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.007s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:177:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_interfaces_[m[K’ was not declared in this scope
+[5.007s]   177 |         state_publisher_->msg_.set_point = [01;31m[Kcommand_interfaces_[m[K[0].get_value();
+[5.007s]       |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.015s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[5.015s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[5.016s]                  from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:188[m[K:
+[5.016s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K At global scope:
+[5.016s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:39:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ in namespace ‘[01m[Kmy_controller[m[K’ does not name a type
+[5.016s]   190 | PLUGINLIB_EXPORT_CLASS(my_controller::[01;31m[KMyController[m[K, controller_interface::ControllerInterface)
+[5.016s]       |                                       [01;31m[K^~~~~~~~~~~~[m[K
+[5.022s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In constructor ‘[01m[K{anonymous}::ProxyExec0::ProxyExec0()[m[K’:
+[5.022s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_derived[m[K’ was not declared in this scope
+[5.022s]   190 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(my_controller::MyController, controller_interface::ControllerInterface)
+[5.022s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.022s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:1:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KregisterPlugin<<expression error>, {anonymous}::ProxyExec0::_base>(const char [28], const char [42])[m[K’
+[5.022s]   190 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(my_controller::MyController, controller_interface::ControllerInterface)
+[5.022s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.022s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+[5.023s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[5.023s]                  from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:188[m[K:
+[5.023s] [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Base> void class_loader::impl::registerPlugin(const string&, const string&)[m[K’
+[5.023s]   210 | void [01;36m[KregisterPlugin[m[K(const std::string & class_name, const std::string & base_class_name)
+[5.023s]       |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[5.023s] [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.023s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[5.023s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[5.023s]                  from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:188[m[K:
+[5.023s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[5.023s]   190 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(my_controller::MyController, controller_interface::ControllerInterface)
+[5.023s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.361s] gmake[2]: *** [CMakeFiles/my_controller.dir/build.make:76: CMakeFiles/my_controller.dir/src/my_controller.cpp.o] Error 1
+[5.362s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_controller.dir/all] Error 2
+[5.362s] gmake: *** [Makefile:146: all] Error 2
+[5.363s] Invoked command in '/home/user/ros2_control_example/build/my_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8

@@ -26,7 +26,7 @@
 
     <!-- This plugin will publish the joint_states for the selected joints 
             (which robot_state_publisher can then use to broadcast the approprate tf). -->
-
+    <!--  Now, we want to use ros2_control. Therefore, the joint_state will be published by ros2_control_node not this gazebo plugin.
     <gazebo>
         <plugin name="gazebo_ros_joint_state_publisher"
             filename="libgazebo_ros_joint_state_publisher.so">
@@ -34,7 +34,7 @@
             <joint_name>arm_joint</joint_name>
         </plugin>
     </gazebo>
-
+    -->  
 
     <!-- This plugin will read a JointTrajectory message from the /set_joint_trajectory topic 
             and move the machine accordingly. It's a bit clunky but it works. -->
@@ -45,11 +45,14 @@
 
     <!-- In other word, we can assign joint pose & orientation through this node to Gazebo, and then Gazeo apply the trajectory to model, and then Gazeo send joint_state to robot_state_publisher, 
         and then robot_state_publisher publish the corresponding tf, and then you can see the result on Rviz2-->         
+        
+    <!--  DON'T NEED THIS RIGHT NOW.
     <gazebo>
         <plugin name="gazebo_ros_joint_pose_trajectory"
             filename="libgazebo_ros_joint_pose_trajectory.so">
             <update_rate>20</update_rate>
         </plugin>
     </gazebo>
-
+    -->         
+        
 </robot>

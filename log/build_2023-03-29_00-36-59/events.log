@@ -1,0 +1,203 @@
+[0.000000] (-) TimerEvent: {}
+[0.000183] (-) JobUnselected: {'identifier': 'robot_model'}
+[0.000399] (my_controller) JobQueued: {'identifier': 'my_controller', 'dependencies': OrderedDict()}
+[0.000558] (my_controller) JobStarted: {'identifier': 'my_controller'}
+[0.010400] (my_controller) JobProgress: {'identifier': 'my_controller', 'progress': 'cmake'}
+[0.010616] (my_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/user/ros2_control_example/src/my_controller', '-DCMAKE_INSTALL_PREFIX=/home/user/ros2_control_example/install/my_controller'], 'cwd': '/home/user/ros2_control_example/build/my_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/ros2_control_example/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1225'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fa73f74d7d89f52e1b7f07464239ba7'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1225,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1225'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fdda62b9_b14b_484f_956a_9f04726bf4e1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4CHM21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.159'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/my_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fa73f74d7d89f52e1b7f07464239ba7'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099842] (-) TimerEvent: {}
+[0.151591] (my_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.200001] (-) TimerEvent: {}
+[0.268673] (my_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.282724] (my_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300087] (-) TimerEvent: {}
+[0.327443] (my_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.333274] (my_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.333977] (my_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.335184] (my_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.339216] (my_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.389626] (my_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.395518] (my_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.395742] (my_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.396108] (my_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.400142] (-) TimerEvent: {}
+[0.401958] (my_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500288] (-) TimerEvent: {}
+[0.538458] (my_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.600365] (-) TimerEvent: {}
+[0.645877] (my_controller) StdoutLine: {'line': b'-- Found control_msgs: 4.1.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.700450] (-) TimerEvent: {}
+[0.707946] (my_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.715174] (my_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.729512] (my_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.752552] (my_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.778116] (my_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.800553] (-) TimerEvent: {}
+[0.900807] (-) TimerEvent: {}
+[1.001068] (-) TimerEvent: {}
+[1.101362] (-) TimerEvent: {}
+[1.201662] (-) TimerEvent: {}
+[1.301954] (-) TimerEvent: {}
+[1.330030] (my_controller) StdoutLine: {'line': b'-- Found controller_interface: 2.18.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[1.402106] (-) TimerEvent: {}
+[1.486644] (my_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.491239] (my_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.502221] (-) TimerEvent: {}
+[1.602550] (-) TimerEvent: {}
+[1.647848] (my_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.691186] (my_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.702651] (-) TimerEvent: {}
+[1.726456] (my_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.742077] (my_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.802748] (-) TimerEvent: {}
+[1.808817] (my_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.809097] (my_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.854050] (my_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.854855] (my_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.902858] (-) TimerEvent: {}
+[2.003100] (-) TimerEvent: {}
+[2.088721] (my_controller) StdoutLine: {'line': b'-- Found realtime_tools: 2.4.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[2.103201] (-) TimerEvent: {}
+[2.131513] (my_controller) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[2.203328] (-) TimerEvent: {}
+[2.303612] (-) TimerEvent: {}
+[2.373681] (my_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.403729] (-) TimerEvent: {}
+[2.504008] (-) TimerEvent: {}
+[2.604327] (-) TimerEvent: {}
+[2.704581] (-) TimerEvent: {}
+[2.705064] (my_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.705247] (my_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/user/ros2_control_example/src/my_controller/include>\n'}
+[2.705309] (my_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.706406] (my_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.707906] (my_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.707960] (my_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.708602] (my_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.711131] (my_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.776834] (my_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[2.778223] (my_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/user/ros2_control_example/build/my_controller\n'}
+[2.785596] (my_controller) CommandEnded: {'returncode': 0}
+[2.786037] (my_controller) JobProgress: {'identifier': 'my_controller', 'progress': 'build'}
+[2.786539] (my_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_control_example/build/my_controller', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_control_example/build/my_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/ros2_control_example/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1225'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fa73f74d7d89f52e1b7f07464239ba7'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1225,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1225'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fdda62b9_b14b_484f_956a_9f04726bf4e1'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.4CHM21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.159'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/my_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=1fa73f74d7d89f52e1b7f07464239ba7'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.804670] (-) TimerEvent: {}
+[2.817491] (my_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_controller.dir/src/my_controller.cpp.o\x1b[0m\n'}
+[2.904757] (-) TimerEvent: {}
+[3.005022] (-) TimerEvent: {}
+[3.105478] (-) TimerEvent: {}
+[3.205786] (-) TimerEvent: {}
+[3.306202] (-) TimerEvent: {}
+[3.406521] (-) TimerEvent: {}
+[3.506794] (-) TimerEvent: {}
+[3.607064] (-) TimerEvent: {}
+[3.707407] (-) TimerEvent: {}
+[3.807697] (-) TimerEvent: {}
+[3.907980] (-) TimerEvent: {}
+[4.008284] (-) TimerEvent: {}
+[4.108603] (-) TimerEvent: {}
+[4.208895] (-) TimerEvent: {}
+[4.309167] (-) TimerEvent: {}
+[4.409426] (-) TimerEvent: {}
+[4.509690] (-) TimerEvent: {}
+[4.609949] (-) TimerEvent: {}
+[4.710269] (-) TimerEvent: {}
+[4.810564] (-) TimerEvent: {}
+[4.910858] (-) TimerEvent: {}
+[4.970280] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:24:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMyController\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.970508] (my_controller) StderrLine: {'line': b'   24 | \x1b[01;31m\x1b[KMyController\x1b[m\x1b[K::MyController() : controller_interface::ControllerInterface() {}\n'}
+[4.970613] (my_controller) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.971959] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:27:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCallbackReturn\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.972060] (my_controller) StderrLine: {'line': b'   27 |     \x1b[01;31m\x1b[KCallbackReturn\x1b[m\x1b[K MyController::on_init() {\n'}
+[4.972116] (my_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.973380] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCallbackReturn\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.973580] (my_controller) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[KCallbackReturn\x1b[m\x1b[K MyController::on_configure(\n'}
+[4.973695] (my_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.973786] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:99:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMyController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.973851] (my_controller) StderrLine: {'line': b'   99 |     controller_interface::InterfaceConfiguration \x1b[01;31m\x1b[KMyController\x1b[m\x1b[K::command_interface_configuration()\n'}
+[4.973915] (my_controller) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.973979] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:100:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knon-member function \xe2\x80\x98\x1b[01m\x1b[Kcontroller_interface::InterfaceConfiguration my_controller::command_interface_configuration()\x1b[m\x1b[K\xe2\x80\x99 cannot have cv-qualifier\n'}
+[4.974051] (my_controller) StderrLine: {'line': b'  100 |     \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K\n'}
+[4.974113] (my_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.977046] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kcontroller_interface::InterfaceConfiguration my_controller::command_interface_configuration()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.977123] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:105:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_names_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.977187] (my_controller) StderrLine: {'line': b'  105 |     command_interfaces_config.names.reserve(\x1b[01;31m\x1b[Kjoint_names_\x1b[m\x1b[K.size());\n'}
+[4.977248] (my_controller) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.980929] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:107:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinterface_name_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.981026] (my_controller) StderrLine: {'line': b'  107 |     command_interfaces_config.names.push_back(joint + "/" + \x1b[01;31m\x1b[Kinterface_name_\x1b[m\x1b[K);\n'}
+[4.981124] (my_controller) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.981213] (my_controller) StderrLine: {'line': b'\n'}
+[4.981266] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:\x1b[m\x1b[K At global scope:\n'}
+[4.981317] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:113:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMyController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.981376] (my_controller) StderrLine: {'line': b'  113 |     controller_interface::InterfaceConfiguration \x1b[01;31m\x1b[KMyController\x1b[m\x1b[K::state_interface_configuration() const\n'}
+[4.981427] (my_controller) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.981476] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:113:96:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Knon-member function \xe2\x80\x98\x1b[01m\x1b[Kcontroller_interface::InterfaceConfiguration my_controller::state_interface_configuration()\x1b[m\x1b[K\xe2\x80\x99 cannot have cv-qualifier\n'}
+[4.981528] (my_controller) StderrLine: {'line': b'  113 | erfaceConfiguration MyController::state_interface_configuration() \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K\n'}
+[4.981578] (my_controller) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.981627] (my_controller) StderrLine: {'line': b'\n'}
+[4.984502] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kcontroller_interface::InterfaceConfiguration my_controller::state_interface_configuration()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.984599] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:118:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_names_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.984657] (my_controller) StderrLine: {'line': b'  118 |     state_interfaces_config.names.reserve(\x1b[01;31m\x1b[Kjoint_names_\x1b[m\x1b[K.size());\n'}
+[4.984715] (my_controller) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.988603] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:120:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinterface_name_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.988696] (my_controller) StderrLine: {'line': b'  120 |       state_interfaces_config.names.push_back(joint + "/" + \x1b[01;31m\x1b[Kinterface_name_\x1b[m\x1b[K);\n'}
+[4.988754] (my_controller) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.988807] (my_controller) StderrLine: {'line': b'\n'}
+[4.990313] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:\x1b[m\x1b[K At global scope:\n'}
+[4.990396] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:146:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCallbackReturn\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.990455] (my_controller) StderrLine: {'line': b'  146 |     \x1b[01;31m\x1b[KCallbackReturn\x1b[m\x1b[K MyController::on_activate(const rclcpp_lifecycle::State & /*previous_state*/)\n'}
+[4.990506] (my_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.991687] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:158:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCallbackReturn\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.991852] (my_controller) StderrLine: {'line': b'  158 |     \x1b[01;31m\x1b[KCallbackReturn\x1b[m\x1b[K MyController::on_deactivate(const rclcpp_lifecycle::State & /*previous_state*/)\n'}
+[4.991918] (my_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.991970] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:165:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMyController\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.992022] (my_controller) StderrLine: {'line': b'  165 |     \x1b[01;31m\x1b[KMyController\x1b[m\x1b[K::update(const rclcpp::Time &time,\n'}
+[4.992077] (my_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.995277] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kcontroller_interface::return_type my_controller::update(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.995363] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:167:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinput_command_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.995422] (my_controller) StderrLine: {'line': b'  167 |     auto current_command = \x1b[01;31m\x1b[Kinput_command_\x1b[m\x1b[K.readFromRT();\n'}
+[4.995474] (my_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.999698] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:169:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommand_interfaces_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.999784] (my_controller) StderrLine: {'line': b'  169 |     for (size_t i = 0; i < \x1b[01;31m\x1b[Kcommand_interfaces_\x1b[m\x1b[K.size(); ++i) {\n'}
+[4.999843] (my_controller) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.003325] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:175:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstate_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.003418] (my_controller) StderrLine: {'line': b'  175 |     if (\x1b[01;31m\x1b[Kstate_publisher_\x1b[m\x1b[K && state_publisher_->trylock()) {\n'}
+[5.003476] (my_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.007578] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:177:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcommand_interfaces_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.007661] (my_controller) StderrLine: {'line': b'  177 |         state_publisher_->msg_.set_point = \x1b[01;31m\x1b[Kcommand_interfaces_\x1b[m\x1b[K[0].get_value();\n'}
+[5.007716] (my_controller) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.010947] (-) TimerEvent: {}
+[5.016043] (my_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56\x1b[m\x1b[K,\n'}
+[5.016226] (my_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40\x1b[m\x1b[K,\n'}
+[5.016321] (my_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:188\x1b[m\x1b[K:\n'}
+[5.016393] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:\x1b[m\x1b[K At global scope:\n'}
+[5.016479] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KMyController\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kmy_controller\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.016545] (my_controller) StderrLine: {'line': b'  190 | PLUGINLIB_EXPORT_CLASS(my_controller::\x1b[01;31m\x1b[KMyController\x1b[m\x1b[K, controller_interface::ControllerInterface)\n'}
+[5.016596] (my_controller) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.022652] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[K{anonymous}::ProxyExec0::ProxyExec0()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.022924] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_derived\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.022995] (my_controller) StderrLine: {'line': b'  190 | \x1b[01;31m\x1b[KPLUGINLIB_EXPORT_CLASS\x1b[m\x1b[K(my_controller::MyController, controller_interface::ControllerInterface)\n'}
+[5.023048] (my_controller) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.023098] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KregisterPlugin<<expression error>, {anonymous}::ProxyExec0::_base>(const char [28], const char [42])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.023151] (my_controller) StderrLine: {'line': b'  190 | \x1b[01;31m\x1b[KPLUGINLIB_EXPORT_CLASS\x1b[m\x1b[K(my_controller::MyController, controller_interface::ControllerInterface)\n'}
+[5.023200] (my_controller) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.023249] (my_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55\x1b[m\x1b[K,\n'}
+[5.023298] (my_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40\x1b[m\x1b[K,\n'}
+[5.023346] (my_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:188\x1b[m\x1b[K:\n'}
+[5.023394] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class Derived, class Base> void class_loader::impl::registerPlugin(const string&, const string&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.023444] (my_controller) StderrLine: {'line': b'  210 | void \x1b[01;36m\x1b[KregisterPlugin\x1b[m\x1b[K(const std::string & class_name, const std::string & base_class_name)\n'}
+[5.023498] (my_controller) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.023546] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.023594] (my_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56\x1b[m\x1b[K,\n'}
+[5.023642] (my_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40\x1b[m\x1b[K,\n'}
+[5.023689] (my_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:188\x1b[m\x1b[K:\n'}
+[5.023740] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.023789] (my_controller) StderrLine: {'line': b'  190 | \x1b[01;31m\x1b[KPLUGINLIB_EXPORT_CLASS\x1b[m\x1b[K(my_controller::MyController, controller_interface::ControllerInterface)\n'}
+[5.023837] (my_controller) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.111079] (-) TimerEvent: {}
+[5.211341] (-) TimerEvent: {}
+[5.311631] (-) TimerEvent: {}
+[5.361874] (my_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_controller.dir/build.make:76: CMakeFiles/my_controller.dir/src/my_controller.cpp.o] Error 1\n'}
+[5.362237] (my_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_controller.dir/all] Error 2\n'}
+[5.362415] (my_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.363682] (my_controller) CommandEnded: {'returncode': 2}
+[5.405122] (my_controller) JobEnded: {'identifier': 'my_controller', 'rc': 2}
+[5.411754] (-) TimerEvent: {}
+[5.416363] (-) EventReactorShutdown: {}

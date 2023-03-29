@@ -1,0 +1,92 @@
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:24:1:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ does not name a type
+   24 | [01;31m[KMyController[m[K::MyController() : controller_interface::ControllerInterface() {}
+      | [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:27:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+   27 |     [01;31m[KCallbackReturn[m[K MyController::on_init() {
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+   41 |     [01;31m[KCallbackReturn[m[K MyController::on_configure(
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:99:50:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ has not been declared
+   99 |     controller_interface::InterfaceConfiguration [01;31m[KMyController[m[K::command_interface_configuration()
+      |                                                  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:100:5:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kcontroller_interface::InterfaceConfiguration my_controller::command_interface_configuration()[m[K’ cannot have cv-qualifier
+  100 |     [01;31m[Kconst[m[K
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::InterfaceConfiguration my_controller::command_interface_configuration()[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:105:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_names_[m[K’ was not declared in this scope
+  105 |     command_interfaces_config.names.reserve([01;31m[Kjoint_names_[m[K.size());
+      |                                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:107:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterface_name_[m[K’ was not declared in this scope
+  107 |     command_interfaces_config.names.push_back(joint + "/" + [01;31m[Kinterface_name_[m[K);
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K At global scope:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:113:50:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ has not been declared
+  113 |     controller_interface::InterfaceConfiguration [01;31m[KMyController[m[K::state_interface_configuration() const
+      |                                                  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:113:96:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[Kcontroller_interface::InterfaceConfiguration my_controller::state_interface_configuration()[m[K’ cannot have cv-qualifier
+  113 | erfaceConfiguration MyController::state_interface_configuration() [01;31m[Kconst[m[K
+      |                                                                   [01;31m[K^~~~~[m[K
+
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::InterfaceConfiguration my_controller::state_interface_configuration()[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:118:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_names_[m[K’ was not declared in this scope
+  118 |     state_interfaces_config.names.reserve([01;31m[Kjoint_names_[m[K.size());
+      |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:120:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterface_name_[m[K’ was not declared in this scope
+  120 |       state_interfaces_config.names.push_back(joint + "/" + [01;31m[Kinterface_name_[m[K);
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K At global scope:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:146:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+  146 |     [01;31m[KCallbackReturn[m[K MyController::on_activate(const rclcpp_lifecycle::State & /*previous_state*/)
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:158:5:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+  158 |     [01;31m[KCallbackReturn[m[K MyController::on_deactivate(const rclcpp_lifecycle::State & /*previous_state*/)
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:165:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ has not been declared
+  165 |     [01;31m[KMyController[m[K::update(const rclcpp::Time &time,
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In function ‘[01m[Kcontroller_interface::return_type my_controller::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:167:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput_command_[m[K’ was not declared in this scope
+  167 |     auto current_command = [01;31m[Kinput_command_[m[K.readFromRT();
+      |                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:169:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_interfaces_[m[K’ was not declared in this scope
+  169 |     for (size_t i = 0; i < [01;31m[Kcommand_interfaces_[m[K.size(); ++i) {
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:175:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_publisher_[m[K’ was not declared in this scope
+  175 |     if ([01;31m[Kstate_publisher_[m[K && state_publisher_->trylock()) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:177:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_interfaces_[m[K’ was not declared in this scope
+  177 |         state_publisher_->msg_.set_point = [01;31m[Kcommand_interfaces_[m[K[0].get_value();
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:188[m[K:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K At global scope:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:39:[m[K [01;31m[Kerror: [m[K‘[01m[KMyController[m[K’ in namespace ‘[01m[Kmy_controller[m[K’ does not name a type
+  190 | PLUGINLIB_EXPORT_CLASS(my_controller::[01;31m[KMyController[m[K, controller_interface::ControllerInterface)
+      |                                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In constructor ‘[01m[K{anonymous}::ProxyExec0::ProxyExec0()[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:1:[m[K [01;31m[Kerror: [m[K‘[01m[K_derived[m[K’ was not declared in this scope
+  190 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(my_controller::MyController, controller_interface::ControllerInterface)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:1:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KregisterPlugin<<expression error>, {anonymous}::ProxyExec0::_base>(const char [28], const char [42])[m[K’
+  190 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(my_controller::MyController, controller_interface::ControllerInterface)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:188[m[K:
+[01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class Derived, class Base> void class_loader::impl::registerPlugin(const string&, const string&)[m[K’
+  210 | void [01;36m[KregisterPlugin[m[K(const std::string & class_name, const std::string & base_class_name)
+      |      [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:210:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:188[m[K:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:190:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  190 | [01;31m[KPLUGINLIB_EXPORT_CLASS[m[K(my_controller::MyController, controller_interface::ControllerInterface)
+      | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/my_controller.dir/build.make:76: CMakeFiles/my_controller.dir/src/my_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
