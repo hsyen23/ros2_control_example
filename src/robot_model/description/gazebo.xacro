@@ -16,10 +16,14 @@
         <material>Gazebo/Orange</material>
     </gazebo>
 
-    <gazebo reference="arm_link">
+    <gazebo reference="arm_link1">
         <material>Gazebo/Blue</material>
     </gazebo>
 
+
+    <gazebo reference="arm_link2">
+        <material>Gazebo/White</material>
+    </gazebo>
 
     <!-- Gazebo requires the use of plugins to interact with other systems such as ROS. -->
 

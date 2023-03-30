@@ -19,8 +19,8 @@ controller_manager:
 my_controller:
   ros__parameters:
     joints:
-      - arm_joint
-    interface_name: position
+      - arm_joint1
+    interface_name: effort
 
 forward_position_controller:
   ros__parameters:
