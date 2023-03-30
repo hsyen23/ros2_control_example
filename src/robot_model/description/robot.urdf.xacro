@@ -4,6 +4,7 @@
     <xacro:include filename="include.xacro" />
 
     <!-- This first link called "world" is empty -->
+    <!--
     <link name="world"></link>
 
     <joint name="base_joint" type="fixed">
@@ -11,7 +12,7 @@
         <parent link="world"/>
         <child link="base_link"/>
     </joint>
-
+    -->
     <link name = "base_link">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>

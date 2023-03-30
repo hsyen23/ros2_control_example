@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target my_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/my_controller.dir/src/my_controller.cpp.o[0m
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type my_controller::MyController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:165:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  165 |     MyController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[100%] [32m[1mLinking CXX shared library libmy_controller.so[0m
+[100%] Built target my_controller
+-- Install configuration: ""
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/my_controller.xml
+-- Installing: /home/user/ros2_control_example/install/my_controller/lib/libmy_controller.so
+-- Set runtime path of "/home/user/ros2_control_example/install/my_controller/lib/libmy_controller.so" to ""
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/include
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/include/my_controller
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/include/my_controller/my_controller.hpp
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller//config
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller//config/my_controllers_custom.yaml
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/library_path.sh
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/library_path.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/package_run_dependencies/my_controller
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/parent_prefix_path/my_controller
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/path.sh
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/path.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.bash
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.sh
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.zsh
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.dsv
+-- Installing: /home/user/ros2_control_example/install/my_controller/share/my_controller/package.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/packages/my_controller
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/my_controller
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/my_controllerConfig.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/my_controllerConfig-version.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/package.xml

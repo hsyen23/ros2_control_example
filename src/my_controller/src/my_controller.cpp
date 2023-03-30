@@ -24,10 +24,14 @@ namespace my_controller
 MyController::MyController() : controller_interface::ControllerInterface() {}
     
 // All the methods added must be inside this namespace
+
+    /*
+    Declare all of the parameters that we will accept during the controller's lifetime
+    */
     CallbackReturn MyController::on_init() {
         try {
-            auto_declare("joints", std::vector<std::string>());
-            auto_declare("interface_name", std::string());
+            auto_declare("joints", std::vector<std::string>()); // declare parameter in ROS named joints, and initialized with std::vector<std::string>().
+            auto_declare("interface_name", std::string());  // declare parameter in ROS named interface_name, and initialized with std::string().
         } catch (const std::exception &e) {
             fprintf(stderr, "Exception thrown during init stage with message: %s \n",
                     e.what());
@@ -38,148 +42,199 @@ MyController::MyController() : controller_interface::ControllerInterface() {}
     }
 
 
+    /*
+    read the parameter values and declare any required subscribers and publishers as required.
+    This method is run previous to the update method call and ensures that once the control algorithm is put into action, everything is set and ready to go.
+
+    In this controller, all paramters (joints, interface_name) values are strings.
+    */
     CallbackReturn MyController::on_configure(
         const rclcpp_lifecycle::State & /*previous_state*/) {
-    auto error_if_empty = [&](const auto &parameter, const char *parameter_name) {
-        if (parameter.empty()) {
-        RCLCPP_ERROR(get_node()->get_logger(), "'%s' parameter was empty",
-                    parameter_name);
-        return true;
-        }
-        return false;
-    };
 
-    auto get_string_array_param_and_error_if_empty =
-        [&](std::vector<std::string> &parameter, const char *parameter_name) {
-            parameter = get_node()->get_parameter(parameter_name).as_string_array();
+        // base lamda function to check whether required ROS parameter value(s) is/are empty
+        auto error_if_empty = [&](const auto &parameter, const char *parameter_name) {
+            if (parameter.empty()) {
+            RCLCPP_ERROR(get_node()->get_logger(), "'%s' parameter was empty",
+                        parameter_name);
+            return true;
+            }
+            return false;
+        };
+
+        // checking for the case if we have multiple values inside desired parameter (values stored as vector<string>)
+        auto get_string_array_param_and_error_if_empty =
+            [&](std::vector<std::string> &parameter, const char *parameter_name) {
+                parameter = get_node()->get_parameter(parameter_name).as_string_array();
+                return error_if_empty(parameter, parameter_name);
+            };
+
+        // checking for the case if we only have one value inside desired parameter (value stored as string)
+        auto get_string_param_and_error_if_empty =
+        [&](std::string &parameter, const char *parameter_name) {
+            parameter = get_node()->get_parameter(parameter_name).as_string();
             return error_if_empty(parameter, parameter_name);
         };
 
-    auto get_string_param_and_error_if_empty =
-    [&](std::string &parameter, const char *parameter_name) {
-        parameter = get_node()->get_parameter(parameter_name).as_string();
-        return error_if_empty(parameter, parameter_name);
-    };
-
-    if (
-        get_string_array_param_and_error_if_empty(joint_names_, "joints") ||
-        get_string_param_and_error_if_empty(interface_name_, "interface_name")) {
-        return CallbackReturn::ERROR;
-    }
-
-    // Command Subscriber and callbacks
-    auto callback_command =
-        [&](const std::shared_ptr<ControllerCommandMsg> msg) -> void {
-        if (msg->joint_names.size() == joint_names_.size()) {
-        input_command_.writeFromNonRT(msg);
-        } else {
-        RCLCPP_ERROR(get_node()->get_logger(),
-                    "Received %zu , but expected %zu joints in command. "
-                    "Ignoring message.",
-                    msg->joint_names.size(), joint_names_.size());
+        // return error if one of parameters has no value (being empty).
+        if (
+            get_string_array_param_and_error_if_empty(joint_names_, "joints") ||
+            get_string_param_and_error_if_empty(interface_name_, "interface_name")) {
+            return CallbackReturn::ERROR;
         }
-    };
-    command_subscriber_ = get_node()->create_subscription<ControllerCommandMsg>(
-        "~/commands", rclcpp::SystemDefaultsQoS(), callback_command);
 
-    // State publisher
-    s_publisher_ =
-    get_node()->create_publisher<ControllerStateMsg>(
-        "~/state", rclcpp::SystemDefaultsQoS());
-    state_publisher_ = std::make_unique<ControllerStatePublisher>(s_publisher_);
+        // Command Subscriber and callbacks
+        // The callback function will examinate whether the received ControllerCommandMsg provides sufficient data for all joints (However, it only checks the amount of joint_names in the msg)
+        auto callback_command =
+            [&](const std::shared_ptr<ControllerCommandMsg> msg) -> void {
+            if (msg->joint_names.size() == joint_names_.size()) {
+            input_command_.writeFromNonRT(msg); // I not sure about this part, my guess is that writeFromNonRT() will put the msg into RT flow (to get correct timestamp automatically), then we call readFromRT() to acquired the msg with correct timestamp from the RT flow.
+            } else {
+            RCLCPP_ERROR(get_node()->get_logger(),
+                        "Received %zu , but expected %zu joints in command. "
+                        "Ignoring message.",
+                        msg->joint_names.size(), joint_names_.size());
+            }
+        };
+        command_subscriber_ = get_node()->create_subscription<ControllerCommandMsg>(
+            "~/commands", rclcpp::SystemDefaultsQoS(), callback_command); // the topic: "~/commands" will be automatically replaced by "/my_controller/commands", I guess it's due to the namespace.
 
-    state_publisher_->lock();
-    state_publisher_->msg_.header.frame_id = joint_names_[0];
-    state_publisher_->unlock();
+        // State publisher (this publisher is for observation/debug purpose since we already have joint_state_broadcaster to publish joint_state for robot_state_publisher)
+        // We declare a publisher for broadcasting the joint states and make it an unique pointer.
+        s_publisher_ =
+        get_node()->create_publisher<ControllerStateMsg>(
+            "~/state", rclcpp::SystemDefaultsQoS());
+        state_publisher_ = std::make_unique<ControllerStatePublisher>(s_publisher_);
 
-    RCLCPP_INFO_STREAM(get_node()->get_logger(), "configure successful");
-    return CallbackReturn::SUCCESS;
+        // The last tree lines above are used to prevent multiple threads from accessing the published message at the same time while setting the header frame_id value.
+        state_publisher_->lock();
+        state_publisher_->msg_.header.frame_id = joint_names_[0];
+        state_publisher_->unlock();
+
+        RCLCPP_INFO_STREAM(get_node()->get_logger(), "configure successful");
+        return CallbackReturn::SUCCESS;
     }
 
-    controller_interface::InterfaceConfiguration MyController::command_interface_configuration()
-    const
+    /*
+    This method is where we define what command interfaces are required.
+
+    Here, we first create a new InterfaceConfiguration object and set the type as INDIVIDUAL. 
+    There are three options of the interface configuration ALL, INDIVIDUAL, and NONE. 
+    ALL and NONE will ask for access to all available interfaces or none of them. 
+    The INDIVIDUAL configuration needs a detailed list of required interface names. 
+    Those are usually provided as parameters.
+
+    */
+    controller_interface::InterfaceConfiguration MyController::command_interface_configuration() const
     {
-    controller_interface::InterfaceConfiguration command_interfaces_config;
-    command_interfaces_config.type = controller_interface::interface_configuration_type::INDIVIDUAL;
+        controller_interface::InterfaceConfiguration command_interfaces_config;
+        command_interfaces_config.type = controller_interface::interface_configuration_type::INDIVIDUAL;
 
-    command_interfaces_config.names.reserve(joint_names_.size());
-    for (const auto & joint : joint_names_) {
-        command_interfaces_config.names.push_back(joint + "/" + interface_name_);
+        command_interfaces_config.names.reserve(joint_names_.size()); // Reserve memory space for the vector of interface names.
+        for (const auto & joint : joint_names_) {
+            command_interfaces_config.names.push_back(joint + "/" + interface_name_); // command_interfaces_[i] order is determined by this line. (command_interfaces_[0] access interface with name = command_interfaces_config.names[0])
+        }
+        // Then each joint is provided with it's own interface name, which is kept inside command_interfaces_config.names. 
+        // A full interface name has to have the structure <joint_name>/<interface_type>.
+
+        // "command_interfaces_config" allow us to set value to "hardware_interface" through "command_interfaces_".
+        return command_interfaces_config;
     }
 
-    return command_interfaces_config;
-    }
+    /*
+    This method is where we define what state interfaces are required.
 
+    This method performs a similar function to the previous method, 
+    with the difference that this method is used to define what hardware sensor interfaces are required by the controller.
+    */
     controller_interface::InterfaceConfiguration MyController::state_interface_configuration() const
     {
-    controller_interface::InterfaceConfiguration state_interfaces_config;
-    state_interfaces_config.type = controller_interface::interface_configuration_type::INDIVIDUAL;
+        controller_interface::InterfaceConfiguration state_interfaces_config;
+        state_interfaces_config.type = controller_interface::interface_configuration_type::INDIVIDUAL;
 
-    state_interfaces_config.names.reserve(joint_names_.size());
-    for (const auto & joint : joint_names_) {
-        state_interfaces_config.names.push_back(joint + "/" + interface_name_);
+        state_interfaces_config.names.reserve(joint_names_.size());
+        for (const auto & joint : joint_names_) {
+            state_interfaces_config.names.push_back(joint + "/" + interface_name_); // We save the sensor interface names to the InterfaceConfiguration object created before.
+        }
+
+        return state_interfaces_config;
     }
 
-    return state_interfaces_config;
-    }
+    /*
+    This templated function takes in an unordered vector of interfaces as argument and converts it into an ordered vector. 
+    It is required to fill ordered_interfaces with references to the matching interfaces in the same order as in joint_names.
 
-
+    I am not sure when the function is called.
+    */
     template <typename T>
     bool get_ordered_interfaces(
     std::vector<T> & unordered_interfaces, const std::vector<std::string> & joint_names,
     const std::string & interface_type, std::vector<std::reference_wrapper<T>> & ordered_interfaces)
     {
-    for (const auto & joint_name : joint_names) {
-        for (auto & command_interface : unordered_interfaces) {
-        if (
-            (command_interface.get_name() == joint_name) &&
-            (command_interface.get_interface_name() == interface_type)) {
-            ordered_interfaces.push_back(std::ref(command_interface));
+        for (const auto & joint_name : joint_names) {
+            for (auto & command_interface : unordered_interfaces) {
+            if (
+                (command_interface.get_name() == joint_name) &&
+                (command_interface.get_interface_name() == interface_type)) {
+                ordered_interfaces.push_back(std::ref(command_interface));
+            }
+            }
         }
-        }
+
+        return joint_names.size() == ordered_interfaces.size();
     }
 
-    return joint_names.size() == ordered_interfaces.size();
-    }
+    /*
+    Declare a command message and set the default value for the command .
 
-
+    on_activate ----switch quickly to----> update
+    */
     CallbackReturn MyController::on_activate(const rclcpp_lifecycle::State & /*previous_state*/)
     {
     // Set default value in command
     std::shared_ptr<ControllerCommandMsg> msg = std::make_shared<ControllerCommandMsg>();
     msg->joint_names = joint_names_;
     msg->displacements.resize(joint_names_.size(), std::numeric_limits<double>::quiet_NaN());
-    input_command_.writeFromNonRT(msg);
+    input_command_.writeFromNonRT(msg); // update for writeFromNonRT(msg). 
+                                        // This will push the msg to RT flow, and exist in RT flow until next msg come in. 
+                                        // In other word, it is like some nodes keep publish the same message on this "RT topic". 
+                                        // That is why readFromRT() always gives us value.
 
     return CallbackReturn::SUCCESS;
     }
 
-
+    /*
+    The on_deactivate() method is called by the controller manager to shutdown the controller. 
+    Often it only contains a return statement that indicates success. 
+    If you need to execute some code instructions to be able to perform a graceful shutdown, then make sure you make it as real time as you can.
+    */
     CallbackReturn MyController::on_deactivate(const rclcpp_lifecycle::State & /*previous_state*/)
     {
     return CallbackReturn::SUCCESS;
     }
 
-
+    /*
+    The update() function is called in the control loop in order to produce a control command for the hardware.
+    */
     controller_interface::return_type
     MyController::update(const rclcpp::Time &time,
                             const rclcpp::Duration & /*period*/) {
-    auto current_command = input_command_.readFromRT();
+        auto current_command = input_command_.readFromRT();
 
-    for (size_t i = 0; i < command_interfaces_.size(); ++i) {
-        if (!std::isnan((*current_command)->displacements[i])) {
-        command_interfaces_[i].set_value((*current_command)->displacements[i]);
+        for (size_t i = 0; i < command_interfaces_.size(); ++i) {
+            if (!std::isnan((*current_command)->displacements[i])) {
+            command_interfaces_[i].set_value((*current_command)->displacements[i]);
+            //RCLCPP_INFO_STREAM(get_node()->get_logger(),"one of hardware interface is written !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            }
         }
-    }
 
-    if (state_publisher_ && state_publisher_->trylock()) {
-        state_publisher_->msg_.header.stamp = time;
-        state_publisher_->msg_.set_point = command_interfaces_[0].get_value();
+        if (state_publisher_ && state_publisher_->trylock()) {
+            state_publisher_->msg_.header.stamp = time;
+            state_publisher_->msg_.set_point = state_interfaces_[0].get_value(); // we can use state_interfaces_[0].get_value() to know the state, but I need to discover the case for multiple data in state_interfaces
+        
+            state_publisher_->unlockAndPublish();
+        }
 
-        state_publisher_->unlockAndPublish();
-    }
-
-    return controller_interface::return_type::OK;
+        return controller_interface::return_type::OK;
     }
 
 

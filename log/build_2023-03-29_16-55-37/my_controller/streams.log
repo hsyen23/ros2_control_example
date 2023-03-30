@@ -1,0 +1,38 @@
+[0.020s] Invoking command in '/home/user/ros2_control_example/build/my_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target my_controller[0m
+[0.066s] [ 50%] [32mBuilding CXX object CMakeFiles/my_controller.dir/src/my_controller.cpp.o[0m
+[6.938s] [100%] [32m[1mLinking CXX shared library libmy_controller.so[0m
+[7.332s] [100%] Built target my_controller
+[7.338s] Invoked command in '/home/user/ros2_control_example/build/my_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8
+[7.353s] Invoking command in '/home/user/ros2_control_example/build/my_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_controller
+[7.358s] -- Install configuration: ""
+[7.359s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/my_controller.xml
+[7.359s] -- Installing: /home/user/ros2_control_example/install/my_controller/lib/libmy_controller.so
+[7.365s] -- Set runtime path of "/home/user/ros2_control_example/install/my_controller/lib/libmy_controller.so" to ""
+[7.365s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/include
+[7.365s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/include/my_controller
+[7.365s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/include/my_controller/my_controller.hpp
+[7.365s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller//config
+[7.365s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller//config/my_controllers_custom.yaml
+[7.365s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/library_path.sh
+[7.365s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/library_path.dsv
+[7.365s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/package_run_dependencies/my_controller
+[7.365s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/parent_prefix_path/my_controller
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/ament_prefix_path.sh
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/ament_prefix_path.dsv
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/path.sh
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/path.dsv
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.bash
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.sh
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.zsh
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.dsv
+[7.366s] -- Installing: /home/user/ros2_control_example/install/my_controller/share/my_controller/package.dsv
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/packages/my_controller
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/my_controller
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[7.366s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.367s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/my_controllerConfig.cmake
+[7.367s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/my_controllerConfig-version.cmake
+[7.367s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/package.xml
+[7.369s] Invoked command in '/home/user/ros2_control_example/build/my_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_controller

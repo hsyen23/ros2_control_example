@@ -1,0 +1,156 @@
+[0.000000] (-) TimerEvent: {}
+[0.000242] (my_controller) JobQueued: {'identifier': 'my_controller', 'dependencies': OrderedDict()}
+[0.000303] (robot_model) JobQueued: {'identifier': 'robot_model', 'dependencies': OrderedDict()}
+[0.000322] (my_controller) JobStarted: {'identifier': 'my_controller'}
+[0.007981] (robot_model) JobStarted: {'identifier': 'robot_model'}
+[0.012470] (my_controller) JobProgress: {'identifier': 'my_controller', 'progress': 'cmake'}
+[0.012940] (my_controller) JobProgress: {'identifier': 'my_controller', 'progress': 'build'}
+[0.013504] (my_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_control_example/build/my_controller', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_control_example/build/my_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/ros2_control_example/install/my_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '23737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/ros2_control_example/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1250,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1250'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b8d660b_fd06_451e_8d29_fe46d531e2e6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1MZI21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.428'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/my_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_controller:/opt/ros/humble')]), 'shell': False}
+[0.016920] (robot_model) JobProgress: {'identifier': 'robot_model', 'progress': 'cmake'}
+[0.017308] (robot_model) JobProgress: {'identifier': 'robot_model', 'progress': 'build'}
+[0.017454] (robot_model) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_control_example/build/robot_model', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_control_example/build/robot_model', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/ros2_control_example/install/my_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '23737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/ros2_control_example/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1250,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1250'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b8d660b_fd06_451e_8d29_fe46d531e2e6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1MZI21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.428'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/robot_model'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_controller:/opt/ros/humble')]), 'shell': False}
+[0.046946] (robot_model) CommandEnded: {'returncode': 0}
+[0.047355] (my_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_controller\x1b[0m\n'}
+[0.058811] (robot_model) JobProgress: {'identifier': 'robot_model', 'progress': 'install'}
+[0.060161] (my_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_controller.dir/src/my_controller.cpp.o\x1b[0m\n'}
+[0.064466] (robot_model) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_control_example/build/robot_model'], 'cwd': '/home/user/ros2_control_example/build/robot_model', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/ros2_control_example/install/my_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '23737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/ros2_control_example/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1250,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1250'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b8d660b_fd06_451e_8d29_fe46d531e2e6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1MZI21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.428'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/robot_model'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_controller:/opt/ros/humble')]), 'shell': False}
+[0.069122] (robot_model) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.069358] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description\n'}
+[0.069485] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/robot.urdf.xacro\n'}
+[0.069597] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/gazebo_ros2_control.xacro\n'}
+[0.069657] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/include.xacro\n'}
+[0.069715] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/gazebo.xacro\n'}
+[0.069767] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/launch\n'}
+[0.069818] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/launch/gazeobo_sim.launch.py\n'}
+[0.069870] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/launch/robot_state_publisher_launch.py\n'}
+[0.069926] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/config\n'}
+[0.069977] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/config/my_controllers.yaml\n'}
+[0.070028] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/package_run_dependencies/robot_model\n'}
+[0.070078] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/parent_prefix_path/robot_model\n'}
+[0.070188] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/ament_prefix_path.sh\n'}
+[0.070237] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/ament_prefix_path.dsv\n'}
+[0.070285] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/path.sh\n'}
+[0.070333] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/path.dsv\n'}
+[0.070382] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.bash\n'}
+[0.070430] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.sh\n'}
+[0.070478] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.zsh\n'}
+[0.070528] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.dsv\n'}
+[0.070576] (robot_model) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/robot_model/share/robot_model/package.dsv\n'}
+[0.070637] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/packages/robot_model\n'}
+[0.070786] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/cmake/robot_modelConfig.cmake\n'}
+[0.070842] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/cmake/robot_modelConfig-version.cmake\n'}
+[0.070954] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/package.xml\n'}
+[0.071599] (robot_model) CommandEnded: {'returncode': 0}
+[0.098778] (-) TimerEvent: {}
+[0.102309] (robot_model) JobEnded: {'identifier': 'robot_model', 'rc': 0}
+[0.198900] (-) TimerEvent: {}
+[0.299192] (-) TimerEvent: {}
+[0.399480] (-) TimerEvent: {}
+[0.499850] (-) TimerEvent: {}
+[0.600212] (-) TimerEvent: {}
+[0.700632] (-) TimerEvent: {}
+[0.801119] (-) TimerEvent: {}
+[0.901402] (-) TimerEvent: {}
+[1.001669] (-) TimerEvent: {}
+[1.101928] (-) TimerEvent: {}
+[1.202208] (-) TimerEvent: {}
+[1.302492] (-) TimerEvent: {}
+[1.402796] (-) TimerEvent: {}
+[1.503085] (-) TimerEvent: {}
+[1.603374] (-) TimerEvent: {}
+[1.703669] (-) TimerEvent: {}
+[1.804009] (-) TimerEvent: {}
+[1.904406] (-) TimerEvent: {}
+[2.004743] (-) TimerEvent: {}
+[2.105049] (-) TimerEvent: {}
+[2.205381] (-) TimerEvent: {}
+[2.305669] (-) TimerEvent: {}
+[2.405987] (-) TimerEvent: {}
+[2.506307] (-) TimerEvent: {}
+[2.606622] (-) TimerEvent: {}
+[2.706942] (-) TimerEvent: {}
+[2.807263] (-) TimerEvent: {}
+[2.907581] (-) TimerEvent: {}
+[3.007902] (-) TimerEvent: {}
+[3.108221] (-) TimerEvent: {}
+[3.208543] (-) TimerEvent: {}
+[3.308855] (-) TimerEvent: {}
+[3.409178] (-) TimerEvent: {}
+[3.509497] (-) TimerEvent: {}
+[3.609785] (-) TimerEvent: {}
+[3.710132] (-) TimerEvent: {}
+[3.810476] (-) TimerEvent: {}
+[3.910842] (-) TimerEvent: {}
+[4.011213] (-) TimerEvent: {}
+[4.111587] (-) TimerEvent: {}
+[4.211954] (-) TimerEvent: {}
+[4.312297] (-) TimerEvent: {}
+[4.412645] (-) TimerEvent: {}
+[4.512981] (-) TimerEvent: {}
+[4.613285] (-) TimerEvent: {}
+[4.713624] (-) TimerEvent: {}
+[4.813962] (-) TimerEvent: {}
+[4.914269] (-) TimerEvent: {}
+[5.014673] (-) TimerEvent: {}
+[5.115041] (-) TimerEvent: {}
+[5.215312] (-) TimerEvent: {}
+[5.315614] (-) TimerEvent: {}
+[5.415919] (-) TimerEvent: {}
+[5.516225] (-) TimerEvent: {}
+[5.616521] (-) TimerEvent: {}
+[5.716819] (-) TimerEvent: {}
+[5.817209] (-) TimerEvent: {}
+[5.917576] (-) TimerEvent: {}
+[6.017992] (-) TimerEvent: {}
+[6.118332] (-) TimerEvent: {}
+[6.218669] (-) TimerEvent: {}
+[6.319003] (-) TimerEvent: {}
+[6.419345] (-) TimerEvent: {}
+[6.519780] (-) TimerEvent: {}
+[6.620329] (-) TimerEvent: {}
+[6.720660] (-) TimerEvent: {}
+[6.821009] (-) TimerEvent: {}
+[6.921328] (-) TimerEvent: {}
+[6.998126] (my_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmy_controller.so\x1b[0m\n'}
+[7.021502] (-) TimerEvent: {}
+[7.121891] (-) TimerEvent: {}
+[7.222142] (-) TimerEvent: {}
+[7.322465] (-) TimerEvent: {}
+[7.398921] (my_controller) StdoutLine: {'line': b'[100%] Built target my_controller\n'}
+[7.406602] (my_controller) CommandEnded: {'returncode': 0}
+[7.419345] (my_controller) JobProgress: {'identifier': 'my_controller', 'progress': 'install'}
+[7.419639] (my_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_control_example/build/my_controller'], 'cwd': '/home/user/ros2_control_example/build/my_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/ros2_control_example/install/my_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '23737'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/ros2_control_example/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1250,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1250'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3b8d660b_fd06_451e_8d29_fe46d531e2e6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1MZI21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.428'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/my_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_controller:/opt/ros/humble')]), 'shell': False}
+[7.422557] (-) TimerEvent: {}
+[7.424651] (my_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.424784] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/my_controller.xml\n'}
+[7.424863] (my_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/my_controller/lib/libmy_controller.so\n'}
+[7.430995] (my_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_control_example/install/my_controller/lib/libmy_controller.so" to ""\n'}
+[7.431366] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/include\n'}
+[7.431483] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/include/my_controller\n'}
+[7.431566] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/include/my_controller/my_controller.hpp\n'}
+[7.431629] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller//config\n'}
+[7.431681] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller//config/my_controllers_custom.yaml\n'}
+[7.431747] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/library_path.sh\n'}
+[7.431814] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/library_path.dsv\n'}
+[7.431915] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/package_run_dependencies/my_controller\n'}
+[7.432029] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/parent_prefix_path/my_controller\n'}
+[7.432114] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/ament_prefix_path.sh\n'}
+[7.432198] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/ament_prefix_path.dsv\n'}
+[7.432275] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/path.sh\n'}
+[7.432354] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/path.dsv\n'}
+[7.432427] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.bash\n'}
+[7.432497] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.sh\n'}
+[7.432575] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.zsh\n'}
+[7.432645] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.dsv\n'}
+[7.432715] (my_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/my_controller/share/my_controller/package.dsv\n'}
+[7.432784] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/packages/my_controller\n'}
+[7.432854] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/my_controller\n'}
+[7.432929] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.433003] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.433078] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.433276] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/my_controllerConfig.cmake\n'}
+[7.435305] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/my_controllerConfig-version.cmake\n'}
+[7.435534] (my_controller) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/package.xml\n'}
+[7.435626] (my_controller) CommandEnded: {'returncode': 0}
+[7.467084] (my_controller) JobEnded: {'identifier': 'my_controller', 'rc': 0}
+[7.467807] (-) EventReactorShutdown: {}

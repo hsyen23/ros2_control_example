@@ -1,0 +1,42 @@
+[0.015s] Invoking command in '/home/user/ros2_control_example/build/my_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target my_controller[0m
+[0.056s] [ 50%] [32mBuilding CXX object CMakeFiles/my_controller.dir/src/my_controller.cpp.o[0m
+[1.854s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type my_controller::MyController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.854s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:219:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.854s]   219 |     MyController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+[1.855s]       |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[6.900s] [100%] [32m[1mLinking CXX shared library libmy_controller.so[0m
+[7.289s] [100%] Built target my_controller
+[7.296s] Invoked command in '/home/user/ros2_control_example/build/my_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8
+[7.309s] Invoking command in '/home/user/ros2_control_example/build/my_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_controller
+[7.314s] -- Install configuration: ""
+[7.314s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/my_controller.xml
+[7.314s] -- Installing: /home/user/ros2_control_example/install/my_controller/lib/libmy_controller.so
+[7.320s] -- Set runtime path of "/home/user/ros2_control_example/install/my_controller/lib/libmy_controller.so" to ""
+[7.320s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/include
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/include/my_controller
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/include/my_controller/my_controller.hpp
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller//config
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller//config/my_controllers_custom.yaml
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/library_path.sh
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/library_path.dsv
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/package_run_dependencies/my_controller
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/parent_prefix_path/my_controller
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/ament_prefix_path.sh
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/ament_prefix_path.dsv
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/path.sh
+[7.321s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/environment/path.dsv
+[7.322s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.bash
+[7.322s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.sh
+[7.322s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.zsh
+[7.322s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/local_setup.dsv
+[7.322s] -- Installing: /home/user/ros2_control_example/install/my_controller/share/my_controller/package.dsv
+[7.322s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/packages/my_controller
+[7.322s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/my_controller
+[7.324s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.325s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[7.325s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.325s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/my_controllerConfig.cmake
+[7.325s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/cmake/my_controllerConfig-version.cmake
+[7.325s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller/share/my_controller/package.xml
+[7.325s] Invoked command in '/home/user/ros2_control_example/build/my_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_controller

@@ -1,0 +1,31 @@
+[0.014s] Invoking command in '/home/user/ros2_control_example/build/my_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target my_controller[0m
+[0.061s] [ 50%] [32mBuilding CXX object CMakeFiles/my_controller.dir/src/my_controller.cpp.o[0m
+[0.273s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:218:106:[m[K [01;31m[Kerror: [m[Kmacro "RCLCPP_INFO_STREAM" requires 2 arguments, but only 1 given
+[0.273s]   218 |         RCLCPP_INFO_STREAM("one of hardware interface is written !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"[01;31m[K)[m[K;
+[0.273s]       |                                                                                                          [01;31m[K^[m[K
+[0.273s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[0.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:23[m[K,
+[0.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[0.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[0.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[0.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[0.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[0.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[0.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[0.273s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[0.274s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[0.274s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[0.274s]                  from [01m[K/home/user/ros2_control_example/src/my_controller/include/my_controller/my_controller.hpp:22[m[K,
+[0.274s]                  from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:15[m[K:
+[0.274s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:722:[m[K [01;36m[Knote: [m[Kmacro "RCLCPP_INFO_STREAM" defined here
+[0.274s]   722 | #define RCLCPP_INFO_STREAM(logger, stream_arg) \
+[0.274s]       | 
+[1.984s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type my_controller::MyController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.984s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:218:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO_STREAM[m[K’ was not declared in this scope
+[1.984s]   218 |         [01;31m[KRCLCPP_INFO_STREAM[m[K("one of hardware interface is written !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+[1.984s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[4.105s] gmake[2]: *** [CMakeFiles/my_controller.dir/build.make:76: CMakeFiles/my_controller.dir/src/my_controller.cpp.o] Error 1
+[4.105s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_controller.dir/all] Error 2
+[4.105s] gmake: *** [Makefile:146: all] Error 2
+[4.106s] Invoked command in '/home/user/ros2_control_example/build/my_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8

@@ -10,6 +10,11 @@ controller_manager:
     my_controller:
       type: my_controller/MyController
 
+    forward_position_controller:
+      type: position_controllers/JointGroupPositionController
+
+    forward_velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
 # Properties of the custom controler and definition of joints to use
 my_controller:
   ros__parameters:
@@ -17,3 +22,12 @@ my_controller:
       - arm_joint
     interface_name: position
 
+forward_position_controller:
+  ros__parameters:
+    joints:
+      - arm_joint
+
+forward_velocity_controller:
+  ros__parameters:
+    joints:
+      - arm_joint
