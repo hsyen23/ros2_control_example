@@ -1,0 +1,29 @@
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In member function ‘[01m[Kvirtual my_controller::CallbackReturn my_controller::MyController::on_init()[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:34:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp_lifecycle::LifecycleNode::declare_parameters(const char [7])[m[K’
+   34 |             [01;31m[Kget_node()->declare_parameters("joints")[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:29[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/user/ros2_control_example/src/my_controller/include/my_controller/my_controller.hpp:22[m[K,
+                 from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp:367:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> std::vector<BufferT> rclcpp_lifecycle::LifecycleNode::declare_parameters(const string&, const std::map<std::__cxx11::basic_string<char>, ParameterT>&)[m[K’
+  367 |   [01;36m[Kdeclare_parameters[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp:367:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:34:43:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   34 |             [01;36m[Kget_node()->declare_parameters("joints")[m[K;
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:29[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/user/ros2_control_example/src/my_controller/include/my_controller/my_controller.hpp:22[m[K,
+                 from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:15[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp:377:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ParameterT> std::vector<BufferT> rclcpp_lifecycle::LifecycleNode::declare_parameters(const string&, const std::map<std::__cxx11::basic_string<char>, std::pair<ParameterT, rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> > > >&)[m[K’
+  377 |   [01;36m[Kdeclare_parameters[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp:377:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:34:43:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+   34 |             [01;36m[Kget_node()->declare_parameters("joints")[m[K;
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/my_controller.dir/build.make:76: CMakeFiles/my_controller.dir/src/my_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

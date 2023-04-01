@@ -1,0 +1,2 @@
+Invoking command in '/home/user/ros2_control_example/build/multi_interface_forward_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_interface_forward_controller -- -j8 -l8
+Invoked command in '/home/user/ros2_control_example/build/multi_interface_forward_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_interface_forward_controller -- -j8 -l8

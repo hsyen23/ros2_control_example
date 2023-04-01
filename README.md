@@ -36,3 +36,12 @@ we can publish /set_joint_trajectory topic to control joint trajectory in Gazebo
 ```
 ros2 topic pub -1 /set_joint_trajectory trajectory_msgs/msg/JointTrajectory  '{header: {frame_id: world}, joint_names: [arm_joint], points: [  {positions: {0.6}} ]}'
 ```
+
+# Ros2 command publish
+ros2 topic pub --once /my_controller/commands control_msgs/msg/JointJog "{joint_names: {"arm_joint1", "arm_joint2"}, displacements: {0.1, -0.1}}"
+
+# Task 1
+create a custom interface for communication between user and controller.
+
+# Task 2
+create my_controller2, same as my_controller but utilize the new created interface.

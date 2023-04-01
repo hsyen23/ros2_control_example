@@ -30,8 +30,9 @@ MyController::MyController() : controller_interface::ControllerInterface() {}
     */
     CallbackReturn MyController::on_init() {
         try {
-            auto_declare("joints", std::vector<std::string>()); // declare parameter in ROS named joints, and initialized with std::vector<std::string>().
-            auto_declare("interface_name", std::string());  // declare parameter in ROS named interface_name, and initialized with std::string().
+            // when you pass the yaml file, parameters declare automatically, so we actually don't need these two line?
+            auto_declare("joints", std::vector<std::string>()); // try to declare parameter in ROS named joints, and initialized with std::vector<std::string>()?
+            auto_declare("interface_name", std::string());  // try to declare parameter in ROS named interface_name, and initialized with std::string()?
         } catch (const std::exception &e) {
             fprintf(stderr, "Exception thrown during init stage with message: %s \n",
                     e.what());
@@ -217,13 +218,14 @@ MyController::MyController() : controller_interface::ControllerInterface() {}
     */
     controller_interface::return_type
     MyController::update(const rclcpp::Time &time,
-                            const rclcpp::Duration & /*period*/) {
+                            const rclcpp::Duration &duration /*period*/) {
         auto current_command = input_command_.readFromRT();
 
         for (size_t i = 0; i < command_interfaces_.size(); ++i) {
             if (!std::isnan((*current_command)->displacements[i])) {
             command_interfaces_[i].set_value((*current_command)->displacements[i]);
-            //RCLCPP_INFO_STREAM(get_node()->get_logger(),"one of hardware interface is written !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+            //RCLCPP_INFO_STREAM(get_node()->get_logger(),"Log tester");
+            //RCLCPP_INFO_STREAM(get_node()->get_logger(),"see time interval: " << duration.seconds()); // display time interval between updates.
             }
         }
 

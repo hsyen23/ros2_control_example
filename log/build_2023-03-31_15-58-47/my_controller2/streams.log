@@ -1,0 +1,11 @@
+[0.009s] Invoking command in '/home/user/ros2_control_example/build/my_controller2': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller2 -- -j8 -l8
+[0.042s] [ 50%] [32mBuilding CXX object CMakeFiles/my_controller2.dir/src/my_controller2.cpp.o[0m
+[0.242s] In file included from [01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:15[m[K:
+[0.242s] [01m[K/home/user/ros2_control_example/src/my_controller2/include/my_controller2/my_controller2.hpp:29:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/String.hpp: No such file or directory
+[0.242s]    29 | #include [01;31m[K"std_msgs/String.hpp"[m[K                    // <--- now we use string message
+[0.242s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[0.242s] compilation terminated.
+[0.243s] gmake[2]: *** [CMakeFiles/my_controller2.dir/build.make:76: CMakeFiles/my_controller2.dir/src/my_controller2.cpp.o] Error 1
+[0.244s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_controller2.dir/all] Error 2
+[0.244s] gmake: *** [Makefile:146: all] Error 2
+[0.245s] Invoked command in '/home/user/ros2_control_example/build/my_controller2' returned '2': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller2 -- -j8 -l8

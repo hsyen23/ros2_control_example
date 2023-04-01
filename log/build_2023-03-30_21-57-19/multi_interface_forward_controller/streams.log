@@ -1,0 +1,22 @@
+[0.025s] Invoking command in '/home/user/ros2_control_example/build/multi_interface_forward_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_interface_forward_controller -- -j8 -l8
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target multi_interface_forward_controller[0m
+[0.087s] [ 50%] [32mBuilding CXX object CMakeFiles/multi_interface_forward_controller.dir/src/multi_interface_forward_controller.cpp.o[0m
+[3.681s] [01m[K/home/user/ros2_control_example/src/multi_interface_forward_controller/src/multi_interface_forward_controller.cpp:[m[K In member function ‘[01m[Kvirtual multi_interface_controller::CallbackReturn multi_interface_controller::MultiController::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[3.681s] [01m[K/home/user/ros2_control_example/src/multi_interface_forward_controller/src/multi_interface_forward_controller.cpp:84:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterface_name_[m[K’ was not declared in this scope; did you mean ‘[01m[Kinterface_names_[m[K’?
+[3.682s]    84 |             get_string_param_and_error_if_empty([01;31m[Kinterface_name_[m[K, "interface_name")) {
+[3.682s]       |                                                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.682s]       |                                                 [32m[Kinterface_names_[m[K
+[3.706s] [01m[K/home/user/ros2_control_example/src/multi_interface_forward_controller/src/multi_interface_forward_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::InterfaceConfiguration multi_interface_controller::MultiController::command_interface_configuration() const[m[K’:
+[3.706s] [01m[K/home/user/ros2_control_example/src/multi_interface_forward_controller/src/multi_interface_forward_controller.cpp:137:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterface_name_[m[K’ was not declared in this scope; did you mean ‘[01m[Kinterface_names_[m[K’?
+[3.706s]   137 |             command_interfaces_config.names.push_back(joint + "/" + [01;31m[Kinterface_name_[m[K); // command_interfaces_[i] order is determined by this line. (command_interfaces_[0] access interface with name = command_interfaces_config.names[0])
+[3.707s]       |                                                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.707s]       |                                                                     [32m[Kinterface_names_[m[K
+[3.713s] [01m[K/home/user/ros2_control_example/src/multi_interface_forward_controller/src/multi_interface_forward_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::InterfaceConfiguration multi_interface_controller::MultiController::state_interface_configuration() const[m[K’:
+[3.713s] [01m[K/home/user/ros2_control_example/src/multi_interface_forward_controller/src/multi_interface_forward_controller.cpp:159:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterface_name_[m[K’ was not declared in this scope; did you mean ‘[01m[Kinterface_names_[m[K’?
+[3.713s]   159 |             state_interfaces_config.names.push_back(joint + "/" + [01;31m[Kinterface_name_[m[K); // We save the sensor interface names to the InterfaceConfiguration object created before.
+[3.713s]       |                                                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.713s]       |                                                                   [32m[Kinterface_names_[m[K
+[7.910s] gmake[2]: *** [CMakeFiles/multi_interface_forward_controller.dir/build.make:76: CMakeFiles/multi_interface_forward_controller.dir/src/multi_interface_forward_controller.cpp.o] Error 1
+[7.911s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/multi_interface_forward_controller.dir/all] Error 2
+[7.913s] gmake: *** [Makefile:146: all] Error 2
+[7.915s] Invoked command in '/home/user/ros2_control_example/build/multi_interface_forward_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_interface_forward_controller -- -j8 -l8

@@ -1,0 +1,8 @@
+<library path="my_controller2">
+  <class name="my_controller2/MyController2"
+         type="my_controller2::MyController2" base_class_type="controller_interface::ControllerInterface">
+  <description>
+    MyController2 ros2_control controller.
+  </description>
+  </class>
+</library>

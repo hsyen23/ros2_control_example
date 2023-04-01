@@ -66,14 +66,15 @@ protected:
   rclcpp::Subscription<ControllerCommandMsg>::SharedPtr command_subscriber_ =
       nullptr;                                                              // used for create command subscriber
   realtime_tools::RealtimeBuffer<std::shared_ptr<ControllerCommandMsg>>
-      input_command_;                                                       // buffer to store command topic
+      input_command_;                                                       // buffer to store command topic, it can do writeFromNonRT() and readFromRT().
 
-  using ControllerStateMsg = control_msgs::msg::JointControllerState;       // the type (interface/message) of published state topic (used for observation/ddebug, have not influence)
+  using ControllerStateMsg = control_msgs::msg::JointControllerState;       // the type (interface/message) of published state topic (used for observation/ddebug, has no influence)
   using ControllerStatePublisher =
       realtime_tools::RealtimePublisher<ControllerStateMsg>;                // used for create state real-time publisher
 
   rclcpp::Publisher<ControllerStateMsg>::SharedPtr s_publisher_;            // used for create state publisher
   std::unique_ptr<ControllerStatePublisher> state_publisher_;               // used for create state publisher
+
 };
 
 } // namespace rrbot_controller

@@ -1,0 +1,32 @@
+[0.015s] Invoking command in '/home/user/ros2_control_example/build/my_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target my_controller[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/my_controller.dir/src/my_controller.cpp.o[0m
+[0.242s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:227:80:[m[K [01;31m[Kerror: [m[Kmacro "RCLCPP_INFO_STREAM" passed 3 arguments, but takes just 2
+[0.242s]   227 |   RCLCPP_INFO_STREAM(get_node()->get_logger(),"counter: %d", counter_[01;31m[K)[m[K;
+[0.242s]       |                                                                      [01;31m[K^[m[K
+[0.242s] 
+[0.242s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[0.242s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:23[m[K,
+[0.242s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[0.242s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[0.242s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[0.243s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[0.243s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[0.243s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[0.243s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[0.243s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[0.243s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+[0.243s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[0.243s]                  from [01m[K/home/user/ros2_control_example/src/my_controller/include/my_controller/my_controller.hpp:22[m[K,
+[0.243s]                  from [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:15[m[K:
+[0.243s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:722:[m[K [01;36m[Knote: [m[Kmacro "RCLCPP_INFO_STREAM" defined here
+[0.243s]   722 | #define RCLCPP_INFO_STREAM(logger, stream_arg) \
+[0.243s]       | 
+[1.877s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type my_controller::MyController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.878s] [01m[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:227:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO_STREAM[m[K’ was not declared in this scope
+[1.878s]   227 |             [01;31m[KRCLCPP_INFO_STREAM[m[K(get_node()->get_logger(),"counter: %d", counter_);
+[1.878s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.876s] gmake[2]: *** [CMakeFiles/my_controller.dir/build.make:76: CMakeFiles/my_controller.dir/src/my_controller.cpp.o] Error 1
+[3.876s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_controller.dir/all] Error 2
+[3.876s] gmake: *** [Makefile:146: all] Error 2
+[3.878s] Invoked command in '/home/user/ros2_control_example/build/my_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller -- -j8 -l8

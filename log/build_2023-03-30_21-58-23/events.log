@@ -1,0 +1,194 @@
+[0.000000] (-) TimerEvent: {}
+[0.000283] (-) JobUnselected: {'identifier': 'my_controller'}
+[0.000690] (-) JobUnselected: {'identifier': 'robot_model'}
+[0.001007] (multi_interface_forward_controller) JobQueued: {'identifier': 'multi_interface_forward_controller', 'dependencies': OrderedDict()}
+[0.001068] (multi_interface_forward_controller) JobStarted: {'identifier': 'multi_interface_forward_controller'}
+[0.014155] (multi_interface_forward_controller) JobProgress: {'identifier': 'multi_interface_forward_controller', 'progress': 'cmake'}
+[0.014847] (multi_interface_forward_controller) JobProgress: {'identifier': 'multi_interface_forward_controller', 'progress': 'build'}
+[0.015563] (multi_interface_forward_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_control_example/build/multi_interface_forward_controller', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_control_example/build/multi_interface_forward_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1229'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=befd7c8ed3d1baf268a74515642646ad'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1229,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1229'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/391de843_92f1_4a11_bdfd_44f683006673'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1TDF21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/multi_interface_forward_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=befd7c8ed3d1baf268a74515642646ad'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.076852] (multi_interface_forward_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target multi_interface_forward_controller\x1b[0m\n'}
+[0.094249] (multi_interface_forward_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/multi_interface_forward_controller.dir/src/multi_interface_forward_controller.cpp.o\x1b[0m\n'}
+[0.100073] (-) TimerEvent: {}
+[0.201104] (-) TimerEvent: {}
+[0.301429] (-) TimerEvent: {}
+[0.401890] (-) TimerEvent: {}
+[0.502202] (-) TimerEvent: {}
+[0.603300] (-) TimerEvent: {}
+[0.703781] (-) TimerEvent: {}
+[0.804163] (-) TimerEvent: {}
+[0.904891] (-) TimerEvent: {}
+[1.005145] (-) TimerEvent: {}
+[1.105452] (-) TimerEvent: {}
+[1.206130] (-) TimerEvent: {}
+[1.307309] (-) TimerEvent: {}
+[1.407924] (-) TimerEvent: {}
+[1.508411] (-) TimerEvent: {}
+[1.609370] (-) TimerEvent: {}
+[1.709726] (-) TimerEvent: {}
+[1.810071] (-) TimerEvent: {}
+[1.910608] (-) TimerEvent: {}
+[2.011246] (-) TimerEvent: {}
+[2.111752] (-) TimerEvent: {}
+[2.212273] (-) TimerEvent: {}
+[2.313010] (-) TimerEvent: {}
+[2.413491] (-) TimerEvent: {}
+[2.513985] (-) TimerEvent: {}
+[2.614714] (-) TimerEvent: {}
+[2.715460] (-) TimerEvent: {}
+[2.815885] (-) TimerEvent: {}
+[2.916318] (-) TimerEvent: {}
+[3.017921] (-) TimerEvent: {}
+[3.118729] (-) TimerEvent: {}
+[3.219305] (-) TimerEvent: {}
+[3.320423] (-) TimerEvent: {}
+[3.420889] (-) TimerEvent: {}
+[3.521386] (-) TimerEvent: {}
+[3.621883] (-) TimerEvent: {}
+[3.722780] (-) TimerEvent: {}
+[3.823339] (-) TimerEvent: {}
+[3.924010] (-) TimerEvent: {}
+[4.025446] (-) TimerEvent: {}
+[4.125727] (-) TimerEvent: {}
+[4.226037] (-) TimerEvent: {}
+[4.326601] (-) TimerEvent: {}
+[4.427371] (-) TimerEvent: {}
+[4.527978] (-) TimerEvent: {}
+[4.628321] (-) TimerEvent: {}
+[4.729093] (-) TimerEvent: {}
+[4.829487] (-) TimerEvent: {}
+[4.929904] (-) TimerEvent: {}
+[5.030642] (-) TimerEvent: {}
+[5.131496] (-) TimerEvent: {}
+[5.231957] (-) TimerEvent: {}
+[5.332430] (-) TimerEvent: {}
+[5.433491] (-) TimerEvent: {}
+[5.533804] (-) TimerEvent: {}
+[5.634190] (-) TimerEvent: {}
+[5.735401] (-) TimerEvent: {}
+[5.836364] (-) TimerEvent: {}
+[5.936793] (-) TimerEvent: {}
+[6.037314] (-) TimerEvent: {}
+[6.138066] (-) TimerEvent: {}
+[6.238420] (-) TimerEvent: {}
+[6.338862] (-) TimerEvent: {}
+[6.440044] (-) TimerEvent: {}
+[6.540576] (-) TimerEvent: {}
+[6.641182] (-) TimerEvent: {}
+[6.741866] (-) TimerEvent: {}
+[6.842802] (-) TimerEvent: {}
+[6.943319] (-) TimerEvent: {}
+[7.043916] (-) TimerEvent: {}
+[7.144729] (-) TimerEvent: {}
+[7.245019] (-) TimerEvent: {}
+[7.345315] (-) TimerEvent: {}
+[7.445863] (-) TimerEvent: {}
+[7.546996] (-) TimerEvent: {}
+[7.647544] (-) TimerEvent: {}
+[7.748167] (-) TimerEvent: {}
+[7.849328] (-) TimerEvent: {}
+[7.949638] (-) TimerEvent: {}
+[8.050215] (-) TimerEvent: {}
+[8.151581] (-) TimerEvent: {}
+[8.252186] (-) TimerEvent: {}
+[8.352619] (-) TimerEvent: {}
+[8.453171] (-) TimerEvent: {}
+[8.554241] (-) TimerEvent: {}
+[8.654665] (-) TimerEvent: {}
+[8.755257] (-) TimerEvent: {}
+[8.856054] (-) TimerEvent: {}
+[8.956542] (-) TimerEvent: {}
+[9.057520] (-) TimerEvent: {}
+[9.158806] (-) TimerEvent: {}
+[9.259577] (-) TimerEvent: {}
+[9.359938] (-) TimerEvent: {}
+[9.460497] (-) TimerEvent: {}
+[9.561489] (-) TimerEvent: {}
+[9.661826] (-) TimerEvent: {}
+[9.762078] (-) TimerEvent: {}
+[9.862644] (-) TimerEvent: {}
+[9.963626] (-) TimerEvent: {}
+[10.064092] (-) TimerEvent: {}
+[10.164718] (-) TimerEvent: {}
+[10.266126] (-) TimerEvent: {}
+[10.366843] (-) TimerEvent: {}
+[10.467363] (-) TimerEvent: {}
+[10.568646] (-) TimerEvent: {}
+[10.668977] (-) TimerEvent: {}
+[10.769226] (-) TimerEvent: {}
+[10.869949] (-) TimerEvent: {}
+[10.971050] (-) TimerEvent: {}
+[11.071522] (-) TimerEvent: {}
+[11.172096] (-) TimerEvent: {}
+[11.273942] (-) TimerEvent: {}
+[11.374661] (-) TimerEvent: {}
+[11.475040] (-) TimerEvent: {}
+[11.576162] (-) TimerEvent: {}
+[11.676550] (-) TimerEvent: {}
+[11.777009] (-) TimerEvent: {}
+[11.877532] (-) TimerEvent: {}
+[11.978539] (-) TimerEvent: {}
+[12.078882] (-) TimerEvent: {}
+[12.179354] (-) TimerEvent: {}
+[12.280598] (-) TimerEvent: {}
+[12.380919] (-) TimerEvent: {}
+[12.481194] (-) TimerEvent: {}
+[12.581759] (-) TimerEvent: {}
+[12.682775] (-) TimerEvent: {}
+[12.783254] (-) TimerEvent: {}
+[12.883664] (-) TimerEvent: {}
+[12.984926] (-) TimerEvent: {}
+[13.085293] (-) TimerEvent: {}
+[13.185894] (-) TimerEvent: {}
+[13.286654] (-) TimerEvent: {}
+[13.340767] (multi_interface_forward_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmulti_interface_forward_controller.so\x1b[0m\n'}
+[13.386843] (-) TimerEvent: {}
+[13.487433] (-) TimerEvent: {}
+[13.588017] (-) TimerEvent: {}
+[13.689560] (-) TimerEvent: {}
+[13.790008] (-) TimerEvent: {}
+[13.890754] (-) TimerEvent: {}
+[13.992515] (-) TimerEvent: {}
+[14.093376] (-) TimerEvent: {}
+[14.193919] (-) TimerEvent: {}
+[14.294632] (-) TimerEvent: {}
+[14.395655] (-) TimerEvent: {}
+[14.496104] (-) TimerEvent: {}
+[14.596491] (-) TimerEvent: {}
+[14.600823] (multi_interface_forward_controller) StdoutLine: {'line': b'[100%] Built target multi_interface_forward_controller\n'}
+[14.609638] (multi_interface_forward_controller) CommandEnded: {'returncode': 0}
+[14.637283] (multi_interface_forward_controller) JobProgress: {'identifier': 'multi_interface_forward_controller', 'progress': 'install'}
+[14.648897] (multi_interface_forward_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_control_example/build/multi_interface_forward_controller'], 'cwd': '/home/user/ros2_control_example/build/multi_interface_forward_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1229'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=befd7c8ed3d1baf268a74515642646ad'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1229,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1229'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/391de843_92f1_4a11_bdfd_44f683006673'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1TDF21'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/multi_interface_forward_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=befd7c8ed3d1baf268a74515642646ad'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.657599] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.658976] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/multi_interface_forward_controller.xml\n'}
+[14.659652] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/lib/libmulti_interface_forward_controller.so\n'}
+[14.672587] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_control_example/install/multi_interface_forward_controller/lib/libmulti_interface_forward_controller.so" to ""\n'}
+[14.672829] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/include\n'}
+[14.672955] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/include/multi_interface_forward_controller\n'}
+[14.673041] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/include/multi_interface_forward_controller/multi_interface_forward_controller.hpp\n'}
+[14.673100] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller//config\n'}
+[14.673151] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller//config/multi_interface_controllers_custom.yaml\n'}
+[14.673398] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/library_path.sh\n'}
+[14.673882] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/library_path.dsv\n'}
+[14.674315] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/ament_index/resource_index/package_run_dependencies/multi_interface_forward_controller\n'}
+[14.675314] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/ament_index/resource_index/parent_prefix_path/multi_interface_forward_controller\n'}
+[14.676526] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/ament_prefix_path.sh\n'}
+[14.677358] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/ament_prefix_path.dsv\n'}
+[14.678711] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/path.sh\n'}
+[14.679629] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/path.dsv\n'}
+[14.680125] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/local_setup.bash\n'}
+[14.680413] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/local_setup.sh\n'}
+[14.680935] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/local_setup.zsh\n'}
+[14.681246] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/local_setup.dsv\n'}
+[14.681522] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/package.dsv\n'}
+[14.681869] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/ament_index/resource_index/packages/multi_interface_forward_controller\n'}
+[14.682010] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/multi_interface_forward_controller\n'}
+[14.682326] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.682668] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.683000] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.683395] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/multi_interface_forward_controllerConfig.cmake\n'}
+[14.683668] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/multi_interface_forward_controllerConfig-version.cmake\n'}
+[14.684004] (multi_interface_forward_controller) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/package.xml\n'}
+[14.685674] (multi_interface_forward_controller) CommandEnded: {'returncode': 0}
+[14.696921] (-) TimerEvent: {}
+[14.755059] (multi_interface_forward_controller) JobEnded: {'identifier': 'multi_interface_forward_controller', 'rc': 0}
+[14.757302] (-) EventReactorShutdown: {}

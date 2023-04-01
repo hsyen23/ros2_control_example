@@ -1,0 +1,14 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/my_controller2.dir/src/my_controller2.cpp.o[0m
+[01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type my_controller2::MyController2::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:226:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct custom_interfaces::msg::Controlnote_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct custom_interfaces::msg::Controlnote_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdisplacements[m[K’
+  226 |             if (!std::isnan((*current_command)->[01;31m[Kdisplacements[m[K[i])) {
+      |                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:221:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  221 |     MyController2::update([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:222:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kduration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  222 |                             [01;35m[Kconst rclcpp::Duration &duration[m[K /*period*/) {
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/my_controller2.dir/build.make:76: CMakeFiles/my_controller2.dir/src/my_controller2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_controller2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,352 @@
+[0.000000] (-) TimerEvent: {}
+[0.000173] (custom_interfaces) JobQueued: {'identifier': 'custom_interfaces', 'dependencies': OrderedDict()}
+[0.000244] (my_controller) JobQueued: {'identifier': 'my_controller', 'dependencies': OrderedDict()}
+[0.000297] (robot_model) JobQueued: {'identifier': 'robot_model', 'dependencies': OrderedDict()}
+[0.000328] (my_controller2) JobQueued: {'identifier': 'my_controller2', 'dependencies': OrderedDict([('custom_interfaces', '/home/user/ros2_control_example/install/custom_interfaces')])}
+[0.000381] (custom_interfaces) JobStarted: {'identifier': 'custom_interfaces'}
+[0.011771] (my_controller) JobStarted: {'identifier': 'my_controller'}
+[0.014292] (robot_model) JobStarted: {'identifier': 'robot_model'}
+[0.019202] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'cmake'}
+[0.020349] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'build'}
+[0.020442] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_control_example/build/custom_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_control_example/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1288'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1263,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1263'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e5e27e_0f0d_4c40_8cc3_70f7bec46a7a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GEW021'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.287'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/custom_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.022064] (my_controller) JobProgress: {'identifier': 'my_controller', 'progress': 'cmake'}
+[0.022464] (my_controller) JobProgress: {'identifier': 'my_controller', 'progress': 'build'}
+[0.022713] (my_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_control_example/build/my_controller', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_control_example/build/my_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1288'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1263,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1263'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e5e27e_0f0d_4c40_8cc3_70f7bec46a7a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GEW021'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.287'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/my_controller'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.024401] (robot_model) JobProgress: {'identifier': 'robot_model', 'progress': 'cmake'}
+[0.024739] (robot_model) JobProgress: {'identifier': 'robot_model', 'progress': 'build'}
+[0.024939] (robot_model) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_control_example/build/robot_model', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_control_example/build/robot_model', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1288'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1263,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1263'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e5e27e_0f0d_4c40_8cc3_70f7bec46a7a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GEW021'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.287'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/robot_model'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.052526] (my_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.058738] (robot_model) CommandEnded: {'returncode': 0}
+[0.066211] (custom_interfaces) StdoutLine: {'line': b'[  3%] Built target custom_interfaces__cpp\n'}
+[0.069362] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target custom_interfaces__rosidl_generator_c\n'}
+[0.072733] (robot_model) JobProgress: {'identifier': 'robot_model', 'progress': 'install'}
+[0.081090] (robot_model) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_control_example/build/robot_model'], 'cwd': '/home/user/ros2_control_example/build/robot_model', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1288'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1263,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1263'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e5e27e_0f0d_4c40_8cc3_70f7bec46a7a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GEW021'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.287'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/robot_model'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.084123] (custom_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_custom_interfaces\n'}
+[0.086524] (custom_interfaces) StdoutLine: {'line': b'[ 22%] Built target custom_interfaces__rosidl_typesupport_cpp\n'}
+[0.088143] (custom_interfaces) StdoutLine: {'line': b'[ 32%] Built target custom_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.088904] (robot_model) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.089889] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description\n'}
+[0.090085] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/robot.urdf.xacro\n'}
+[0.090242] (robot_model) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/gazebo_ros2_control.xacro\n'}
+[0.090604] (custom_interfaces) StdoutLine: {'line': b'[ 41%] Built target custom_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.090801] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/include.xacro\n'}
+[0.090947] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/gazebo.xacro\n'}
+[0.091048] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/launch\n'}
+[0.091139] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/launch/gazeobo_sim.launch.py\n'}
+[0.091215] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/launch/robot_state_publisher_launch.py\n'}
+[0.091290] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/config\n'}
+[0.091380] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/config/my_controllers.yaml\n'}
+[0.091469] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/package_run_dependencies/robot_model\n'}
+[0.091556] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/parent_prefix_path/robot_model\n'}
+[0.091627] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/ament_prefix_path.sh\n'}
+[0.091693] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/ament_prefix_path.dsv\n'}
+[0.091981] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/path.sh\n'}
+[0.092288] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/path.dsv\n'}
+[0.092993] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.bash\n'}
+[0.093150] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.sh\n'}
+[0.093222] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.zsh\n'}
+[0.093284] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.dsv\n'}
+[0.093345] (robot_model) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/robot_model/share/robot_model/package.dsv\n'}
+[0.093406] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/packages/robot_model\n'}
+[0.093480] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/cmake/robot_modelConfig.cmake\n'}
+[0.093557] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/cmake/robot_modelConfig-version.cmake\n'}
+[0.094602] (robot_model) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/package.xml\n'}
+[0.094728] (custom_interfaces) StdoutLine: {'line': b'[ 51%] Built target custom_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.094827] (robot_model) CommandEnded: {'returncode': 0}
+[0.095259] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces__rosidl_typesupport_c\n'}
+[0.095398] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.099131] (-) TimerEvent: {}
+[0.108044] (custom_interfaces) StdoutLine: {'line': b'[ 70%] Built target custom_interfaces\n'}
+[0.121261] (custom_interfaces) StdoutLine: {'line': b'[ 74%] Built target custom_interfaces__py\n'}
+[0.136613] (custom_interfaces) StdoutLine: {'line': b'[ 80%] Built target custom_interfaces__rosidl_generator_py\n'}
+[0.141992] (robot_model) JobEnded: {'identifier': 'robot_model', 'rc': 0}
+[0.151442] (custom_interfaces) StdoutLine: {'line': b'[ 87%] Built target custom_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.153353] (custom_interfaces) StdoutLine: {'line': b'[ 93%] Built target custom_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.155818] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target custom_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.183031] (my_controller) StdoutLine: {'line': b'-- Found control_msgs: 4.1.0 (/opt/ros/humble/share/control_msgs/cmake)\n'}
+[0.199206] (-) TimerEvent: {}
+[0.201651] (my_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.203669] (my_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.208329] (my_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.217264] (my_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.229580] (my_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299322] (-) TimerEvent: {}
+[0.308081] (custom_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.308603] (custom_interfaces) StdoutLine: {'line': b'writing custom_interfaces.egg-info/PKG-INFO\n'}
+[0.308886] (custom_interfaces) StdoutLine: {'line': b'writing dependency_links to custom_interfaces.egg-info/dependency_links.txt\n'}
+[0.309022] (custom_interfaces) StdoutLine: {'line': b'writing top-level names to custom_interfaces.egg-info/top_level.txt\n'}
+[0.310550] (custom_interfaces) StdoutLine: {'line': b"reading manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[0.311170] (custom_interfaces) StdoutLine: {'line': b"writing manifest file 'custom_interfaces.egg-info/SOURCES.txt'\n"}
+[0.328366] (custom_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_custom_interfaces_egg\n'}
+[0.335478] (custom_interfaces) CommandEnded: {'returncode': 0}
+[0.362073] (custom_interfaces) JobProgress: {'identifier': 'custom_interfaces', 'progress': 'install'}
+[0.362372] (custom_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_control_example/build/custom_interfaces'], 'cwd': '/home/user/ros2_control_example/build/custom_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1288'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1263,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1263'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e5e27e_0f0d_4c40_8cc3_70f7bec46a7a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GEW021'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.287'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/custom_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.367455] (custom_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.367663] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/ament_index/resource_index/rosidl_interfaces/custom_interfaces\n'}
+[0.367788] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.367873] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.367969] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.368064] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__struct.h\n'}
+[0.368144] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__functions.h\n'}
+[0.368218] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__functions.c\n'}
+[0.368328] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__type_support.h\n'}
+[0.368438] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/controlnote.h\n'}
+[0.368536] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.368617] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/environment/library_path.sh\n'}
+[0.368689] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/environment/library_path.dsv\n'}
+[0.368791] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_c.so\n'}
+[0.368882] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.368963] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.369035] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.369115] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__rosidl_typesupport_fastrtps_c.h\n'}
+[0.369198] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.369296] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.369374] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.369455] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.369528] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.369607] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__struct.hpp\n'}
+[0.369696] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__builder.hpp\n'}
+[0.369786] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__traits.hpp\n'}
+[0.369874] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/controlnote.hpp\n'}
+[0.369964] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.370050] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.370133] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.370238] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.370350] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/dds_fastrtps\n'}
+[0.370423] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.370494] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.370564] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.370639] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.370710] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.370781] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__rosidl_typesupport_introspection_c.h\n'}
+[0.370852] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__type_support.c\n'}
+[0.370949] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.371022] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.371093] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_c.so\n'}
+[0.371169] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces\n'}
+[0.371241] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg\n'}
+[0.371312] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail\n'}
+[0.371382] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__type_support.cpp\n'}
+[0.371453] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/include/custom_interfaces/custom_interfaces/msg/detail/controlnote__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.371523] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.371592] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/lib/libcustom_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.371661] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.sh\n'}
+[0.371732] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/environment/pythonpath.dsv\n'}
+[0.371810] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info\n'}
+[0.371881] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.371952] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.372022] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.372096] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.372165] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces\n'}
+[0.372236] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.372306] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/__init__.py\n'}
+[0.372377] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.372448] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg\n'}
+[0.372519] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_controlnote.py\n'}
+[0.372588] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/__init__.py\n'}
+[0.372658] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg/_controlnote_s.c\n'}
+[0.372728] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/libcustom_interfaces__rosidl_generator_py.so\n'}
+[0.372797] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.372868] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.372942] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.373013] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.391763] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces'...\n"}
+[0.391999] (custom_interfaces) StdoutLine: {'line': b"Listing '/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/msg'...\n"}
+[0.394941] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.395152] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.395321] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages/custom_interfaces/custom_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.395489] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/lib/libcustom_interfaces__rosidl_generator_py.so\n'}
+[0.395600] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/msg/Controlnote.idl\n'}
+[0.395690] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/msg/Controlnote.msg\n'}
+[0.395765] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/ament_index/resource_index/package_run_dependencies/custom_interfaces\n'}
+[0.395842] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/ament_index/resource_index/parent_prefix_path/custom_interfaces\n'}
+[0.395913] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.sh\n'}
+[0.396004] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.396054] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/environment/path.sh\n'}
+[0.396102] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/environment/path.dsv\n'}
+[0.396162] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/local_setup.bash\n'}
+[0.396211] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/local_setup.sh\n'}
+[0.396280] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/local_setup.zsh\n'}
+[0.396328] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/local_setup.dsv\n'}
+[0.396393] (custom_interfaces) StdoutLine: {'line': b'-- Installing: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/package.dsv\n'}
+[0.396456] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/ament_index/resource_index/packages/custom_interfaces\n'}
+[0.396529] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.396591] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.396643] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.396711] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.396781] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.396842] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.396909] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.396982] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.397033] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.397102] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.397171] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.397241] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.397311] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.397381] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.397448] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.397505] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.397554] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/export_custom_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.397604] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.397652] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.397701] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.397750] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.397798] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.397847] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.397895] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.397948] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig.cmake\n'}
+[0.397997] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake/custom_interfacesConfig-version.cmake\n'}
+[0.398045] (custom_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/package.xml\n'}
+[0.398772] (custom_interfaces) CommandEnded: {'returncode': 0}
+[0.400871] (-) TimerEvent: {}
+[0.445289] (custom_interfaces) JobEnded: {'identifier': 'custom_interfaces', 'rc': 0}
+[0.447421] (my_controller2) JobStarted: {'identifier': 'my_controller2'}
+[0.453569] (my_controller2) JobProgress: {'identifier': 'my_controller2', 'progress': 'cmake'}
+[0.454212] (my_controller2) JobProgress: {'identifier': 'my_controller2', 'progress': 'build'}
+[0.454473] (my_controller2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_control_example/build/my_controller2', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_control_example/build/my_controller2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/ros2_control_example/install/custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1288'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1263,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1263'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04e5e27e_0f0d_4c40_8cc3_70f7bec46a7a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GEW021'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.287'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/my_controller2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.471678] (my_controller2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500998] (-) TimerEvent: {}
+[0.573867] (my_controller2) StdoutLine: {'line': b'-- Found controller_interface: 2.18.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[0.594115] (my_controller2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.595978] (my_controller2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.600503] (my_controller2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.601053] (-) TimerEvent: {}
+[0.609020] (my_controller2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.621000] (my_controller2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.701246] (-) TimerEvent: {}
+[0.702053] (my_controller) StdoutLine: {'line': b'-- Found controller_interface: 2.18.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[0.776111] (my_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.777168] (my_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801315] (-) TimerEvent: {}
+[0.864004] (my_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.901444] (-) TimerEvent: {}
+[1.001765] (-) TimerEvent: {}
+[1.067451] (my_controller) StdoutLine: {'line': b'-- Found realtime_tools: 2.4.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[1.095814] (my_controller) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[1.101870] (-) TimerEvent: {}
+[1.150671] (my_controller2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.151752] (my_controller2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.201996] (-) TimerEvent: {}
+[1.237823] (my_controller2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.302112] (-) TimerEvent: {}
+[1.323799] (my_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.402248] (-) TimerEvent: {}
+[1.464504] (my_controller2) StdoutLine: {'line': b'-- Found realtime_tools: 2.4.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[1.492533] (my_controller2) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[1.502313] (-) TimerEvent: {}
+[1.538931] (my_controller2) StdoutLine: {'line': b'-- Found custom_interfaces: 0.0.0 (/home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake)\n'}
+[1.579076] (my_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.579217] (my_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/user/ros2_control_example/src/my_controller/include>\n'}
+[1.579347] (my_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.579723] (my_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.580360] (my_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.580454] (my_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.580667] (my_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.581507] (my_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.602425] (-) TimerEvent: {}
+[1.642630] (my_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[1.644039] (my_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/user/ros2_control_example/build/my_controller\n'}
+[1.660775] (my_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_controller\x1b[0m\n'}
+[1.672582] (my_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_controller.dir/src/my_controller.cpp.o\x1b[0m\n'}
+[1.702571] (-) TimerEvent: {}
+[1.802860] (-) TimerEvent: {}
+[1.843600] (my_controller2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.902941] (-) TimerEvent: {}
+[2.003190] (-) TimerEvent: {}
+[2.103424] (-) TimerEvent: {}
+[2.152357] (my_controller2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.152576] (my_controller2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/user/ros2_control_example/src/my_controller2/include>\n'}
+[2.152654] (my_controller2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.153003] (my_controller2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.153601] (my_controller2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.153680] (my_controller2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.153905] (my_controller2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.155861] (my_controller2) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.199616] (my_controller2) StdoutLine: {'line': b'-- Generating done\n'}
+[2.201146] (my_controller2) StdoutLine: {'line': b'-- Build files have been written to: /home/user/ros2_control_example/build/my_controller2\n'}
+[2.203528] (-) TimerEvent: {}
+[2.226699] (my_controller2) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_controller2.dir/src/my_controller2.cpp.o\x1b[0m\n'}
+[2.303667] (-) TimerEvent: {}
+[2.403991] (-) TimerEvent: {}
+[2.409232] (my_controller2) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:15\x1b[m\x1b[K:\n'}
+[2.409450] (my_controller2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller2/include/my_controller2/my_controller2.hpp:29:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kstd_msgs/msg/String.hpp: No such file or directory\n'}
+[2.409529] (my_controller2) StderrLine: {'line': b'   29 | #include \x1b[01;31m\x1b[K"std_msgs/msg/String.hpp"\x1b[m\x1b[K                        // <--- now we use string message\n'}
+[2.409586] (my_controller2) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.409636] (my_controller2) StderrLine: {'line': b'compilation terminated.\n'}
+[2.411622] (my_controller2) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_controller2.dir/build.make:76: CMakeFiles/my_controller2.dir/src/my_controller2.cpp.o] Error 1\n'}
+[2.411797] (my_controller2) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_controller2.dir/all] Error 2\n'}
+[2.411952] (my_controller2) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.413340] (my_controller2) CommandEnded: {'returncode': 2}
+[2.442217] (my_controller2) JobEnded: {'identifier': 'my_controller2', 'rc': 2}
+[2.504111] (-) TimerEvent: {}
+[2.604368] (-) TimerEvent: {}
+[2.704641] (-) TimerEvent: {}
+[2.804955] (-) TimerEvent: {}
+[2.905291] (-) TimerEvent: {}
+[3.005617] (-) TimerEvent: {}
+[3.106006] (-) TimerEvent: {}
+[3.206290] (-) TimerEvent: {}
+[3.306610] (-) TimerEvent: {}
+[3.406933] (-) TimerEvent: {}
+[3.468784] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual controller_interface::return_type my_controller::MyController::update(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.470853] (my_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_controller/src/my_controller.cpp:221:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kduration\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.470986] (my_controller) StderrLine: {'line': b'  221 |                             \x1b[01;35m\x1b[Kconst rclcpp::Duration &duration\x1b[m\x1b[K /*period*/) {\n'}
+[3.471075] (my_controller) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[3.507053] (-) TimerEvent: {}
+[3.607389] (-) TimerEvent: {}
+[3.707746] (-) TimerEvent: {}
+[3.808072] (-) TimerEvent: {}
+[3.908385] (-) TimerEvent: {}
+[4.008707] (-) TimerEvent: {}
+[4.109028] (-) TimerEvent: {}
+[4.209355] (-) TimerEvent: {}
+[4.309681] (-) TimerEvent: {}
+[4.410019] (-) TimerEvent: {}
+[4.510352] (-) TimerEvent: {}
+[4.610697] (-) TimerEvent: {}
+[4.711031] (-) TimerEvent: {}
+[4.811351] (-) TimerEvent: {}
+[4.911664] (-) TimerEvent: {}
+[5.012017] (-) TimerEvent: {}
+[5.112393] (-) TimerEvent: {}
+[5.212741] (-) TimerEvent: {}
+[5.313091] (-) TimerEvent: {}
+[5.413451] (-) TimerEvent: {}
+[5.513815] (-) TimerEvent: {}
+[5.614212] (-) TimerEvent: {}
+[5.714579] (-) TimerEvent: {}
+[5.814928] (-) TimerEvent: {}
+[5.915246] (-) TimerEvent: {}
+[6.015607] (-) TimerEvent: {}
+[6.115992] (-) TimerEvent: {}
+[6.216359] (-) TimerEvent: {}
+[6.316699] (-) TimerEvent: {}
+[6.417068] (-) TimerEvent: {}
+[6.517408] (-) TimerEvent: {}
+[6.617775] (-) TimerEvent: {}
+[6.718118] (-) TimerEvent: {}
+[6.818469] (-) TimerEvent: {}
+[6.918797] (-) TimerEvent: {}
+[7.019146] (-) TimerEvent: {}
+[7.119491] (-) TimerEvent: {}
+[7.219825] (-) TimerEvent: {}
+[7.320181] (-) TimerEvent: {}
+[7.420543] (-) TimerEvent: {}
+[7.520899] (-) TimerEvent: {}
+[7.621257] (-) TimerEvent: {}
+[7.721624] (-) TimerEvent: {}
+[7.821965] (-) TimerEvent: {}
+[7.922407] (-) TimerEvent: {}
+[8.022685] (-) TimerEvent: {}
+[8.122980] (-) TimerEvent: {}
+[8.223210] (-) TimerEvent: {}
+[8.323492] (-) TimerEvent: {}
+[8.423803] (-) TimerEvent: {}
+[8.441593] (my_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmy_controller.so\x1b[0m\n'}
+[8.523918] (-) TimerEvent: {}
+[8.624288] (-) TimerEvent: {}
+[8.724569] (-) TimerEvent: {}
+[8.824904] (-) TimerEvent: {}
+[8.880401] (my_controller) StdoutLine: {'line': b'[100%] Built target my_controller\n'}
+[8.886871] (my_controller) JobEnded: {'identifier': 'my_controller', 'rc': 'SIGINT'}
+[8.898138] (-) EventReactorShutdown: {}

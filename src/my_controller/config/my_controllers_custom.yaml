@@ -20,7 +20,11 @@ my_controller:
   ros__parameters:
     joints:
       - arm_joint1
+      - arm_joint2
     interface_name: effort
+    test_parameter:
+      sub_parameter1: 1
+      sub_parameter2: 2
 
 forward_position_controller:
   ros__parameters:

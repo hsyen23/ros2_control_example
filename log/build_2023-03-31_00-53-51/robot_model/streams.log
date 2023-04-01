@@ -1,0 +1,30 @@
+[0.011s] Invoking command in '/home/user/ros2_control_example/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/robot_model -- -j8 -l8
+[0.035s] Invoked command in '/home/user/ros2_control_example/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/robot_model -- -j8 -l8
+[0.053s] Invoking command in '/home/user/ros2_control_example/build/robot_model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/robot_model
+[0.057s] -- Install configuration: ""
+[0.057s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description
+[0.057s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/robot.urdf.xacro
+[0.057s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/gazebo_ros2_control.xacro
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/include.xacro
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/description/gazebo.xacro
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/launch
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/launch/gazeobo_sim.launch.py
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/launch/robot_state_publisher_launch.py
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/config
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/config/my_controllers.yaml
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/package_run_dependencies/robot_model
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/parent_prefix_path/robot_model
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/ament_prefix_path.sh
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/ament_prefix_path.dsv
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/path.sh
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/path.dsv
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.bash
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.sh
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.zsh
+[0.058s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/local_setup.dsv
+[0.058s] -- Installing: /home/user/ros2_control_example/install/robot_model/share/robot_model/package.dsv
+[0.059s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/packages/robot_model
+[0.059s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/cmake/robot_modelConfig.cmake
+[0.059s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/cmake/robot_modelConfig-version.cmake
+[0.059s] -- Up-to-date: /home/user/ros2_control_example/install/robot_model/share/robot_model/package.xml
+[0.060s] Invoked command in '/home/user/ros2_control_example/build/robot_model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/robot_model

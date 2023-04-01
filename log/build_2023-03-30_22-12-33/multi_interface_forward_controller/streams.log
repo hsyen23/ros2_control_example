@@ -1,0 +1,37 @@
+[0.023s] Invoking command in '/home/user/ros2_control_example/build/multi_interface_forward_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_interface_forward_controller -- -j8 -l8
+[0.064s] [ 50%] [32mBuilding CXX object CMakeFiles/multi_interface_forward_controller.dir/src/multi_interface_forward_controller.cpp.o[0m
+[6.953s] [100%] [32m[1mLinking CXX shared library libmulti_interface_forward_controller.so[0m
+[7.384s] [100%] Built target multi_interface_forward_controller
+[7.391s] Invoked command in '/home/user/ros2_control_example/build/multi_interface_forward_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_interface_forward_controller -- -j8 -l8
+[7.404s] Invoking command in '/home/user/ros2_control_example/build/multi_interface_forward_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/multi_interface_forward_controller
+[7.409s] -- Install configuration: ""
+[7.409s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/multi_interface_forward_controller.xml
+[7.409s] -- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/lib/libmulti_interface_forward_controller.so
+[7.415s] -- Set runtime path of "/home/user/ros2_control_example/install/multi_interface_forward_controller/lib/libmulti_interface_forward_controller.so" to ""
+[7.415s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/include
+[7.415s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/include/multi_interface_forward_controller
+[7.415s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/include/multi_interface_forward_controller/multi_interface_forward_controller.hpp
+[7.415s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller//config
+[7.415s] -- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller//config/multi_interface_controllers_custom.yaml
+[7.415s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/library_path.sh
+[7.415s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/library_path.dsv
+[7.415s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/ament_index/resource_index/package_run_dependencies/multi_interface_forward_controller
+[7.415s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/ament_index/resource_index/parent_prefix_path/multi_interface_forward_controller
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/ament_prefix_path.sh
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/ament_prefix_path.dsv
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/path.sh
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/environment/path.dsv
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/local_setup.bash
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/local_setup.sh
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/local_setup.zsh
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/local_setup.dsv
+[7.416s] -- Installing: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/package.dsv
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/ament_index/resource_index/packages/multi_interface_forward_controller
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/multi_interface_forward_controller
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/multi_interface_forward_controllerConfig.cmake
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/cmake/multi_interface_forward_controllerConfig-version.cmake
+[7.416s] -- Up-to-date: /home/user/ros2_control_example/install/multi_interface_forward_controller/share/multi_interface_forward_controller/package.xml
+[7.419s] Invoked command in '/home/user/ros2_control_example/build/multi_interface_forward_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/multi_interface_forward_controller

@@ -1,0 +1,2 @@
+Invoking command in '/home/user/ros2_control_example/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/ros2_control_example/src/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/user/ros2_control_example/install/custom_interfaces
+Invoked command in '/home/user/ros2_control_example/build/custom_interfaces' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/ros2_control_example/src/custom_interfaces -DCMAKE_INSTALL_PREFIX=/home/user/ros2_control_example/install/custom_interfaces
