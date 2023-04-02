@@ -1,0 +1,23 @@
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type multi_link_controller::MultiLinkController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:260:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kfloat[m[K’
+  260 |             error_integral_before_clamp += error
+      |                                                 [01;31m[K^[m[K
+      |                                                 [32m[K;[m[K
+  261 | 
+  262 |             [32m[Kfloat[m[K torque_output = (P_[i] * error + I_[i] * error_integral_before_clamp + D_[i] * diff_error);
+      |             [32m[K~~~~~[m[K                                
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:263:51:[m[K [01;31m[Kerror: [m[K‘[01m[Ktorque_output[m[K’ was not declared in this scope
+  263 |             float torque_output_after_clip = clip([01;31m[Ktorque_output[m[K, -50.0, 50.0);
+      |                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:256:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdiff_error[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  256 |             float [01;35m[Kdiff_error[m[K = (error - previous_error_[i])/ duration.seconds();
+      |                   [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:266:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Koutput_saturation[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  266 |             bool [01;35m[Koutput_saturation[m[K = (torque_output_after_clip != torque_output);
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:244:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  244 |     MultiLinkController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/multi_link_controller.dir/build.make:76: CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/multi_link_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

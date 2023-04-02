@@ -31,6 +31,10 @@ float clip(float n, float lower, float upper) {
   return std::max(lower, std::min(n, upper));
 }
 
+template <typename T> int sgn(T val) {
+    return (T(0) < val) - (val < T(0));
+}
+
 namespace multi_link_controller
 {
 MultiLinkController::MultiLinkController() : controller_interface::ControllerInterface() {} // empty constructor, ros pluginlib require all plugin have empty constructor!
@@ -243,18 +247,32 @@ MultiLinkController::MultiLinkController() : controller_interface::ControllerInt
                                                             // If we use a subscriber here, the update() will block here untill one publisher send a message, and it will back to blocked for next message.
       
         for (size_t i = 0; i < command_interfaces_.size(); ++i) {
-            if (!std::isnan((*current_command)->values[i])) {
-            // Here is PID control part 
-            
-            // compute error = target - current_state
-            float error = round_in_2pi((*current_command)->values[i] - state_interfaces_[i].get_value());
-            // select shortest arc
-            float diff_error = (error - previous_error_[i])/ duration.seconds();
-            previous_error_[i] = error;
-            error_integral_[i] += I_[i] * error;
-            float torque_output = (P_[i] * error + error_integral_[i] + D_[i] * diff_error) * (*current_command)->controllable[i];
-            torque_output = clip(torque_output, -200.0, 200.0);
-            command_interfaces_[i].set_value(torque_output);
+            if (!std::isnan((*current_command)->values[i])) {   // this will save us from setting NAN to hardware interface (from on_activate() function).
+                if ((*current_command)->controllable[i]){ // We do PID calculation only for controllable joints. Otherwise, error will keep increasing for not controllable joints.
+                    // Here is PID control part 
+
+                    // compute error = target - current_state
+                    float error = round_in_2pi((*current_command)->values[i] - state_interfaces_[i].get_value());
+                    // select shortest arc
+                    float diff_error = (error - previous_error_[i])/ duration.seconds();
+                    previous_error_[i] = error;
+                    // integral clamp
+                    float error_integral_before_clamp = error_integral_[i];
+                    error_integral_before_clamp += error;
+
+                    float torque_output = (P_[i] * error + I_[i] * error_integral_before_clamp + D_[i] * diff_error);
+                    float torque_output_after_clip = clip(torque_output, -20.0, 20.0);
+
+                    // anti-windup check
+                    bool output_saturation = (torque_output_after_clip != torque_output);
+                    bool winded = (sgn(error) == sgn(torque_output));
+                    if (!(output_saturation && winded)){
+                        error_integral_[i] = error_integral_before_clamp; // if winded and saturated, add zero to error integral.
+                    }
+                    command_interfaces_[i].set_value(torque_output_after_clip);
+                }else{
+                    command_interfaces_[i].set_value(0.0);
+                }
             //RCLCPP_INFO_STREAM(get_node()->get_logger(),"Log tester");
             //RCLCPP_INFO_STREAM(get_node()->get_logger(),"see time interval: " << duration.seconds()); // display time interval between updates.
             }
