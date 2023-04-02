@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_interfaces/msg/MultiLinkPos.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module custom_interfaces {
+  module msg {
+    struct MultiLinkPos {
+      std_msgs::msg::Header header;
+
+      sequence<string> joint_names;
+
+      sequence<boolean> controllable;
+
+      sequence<double> values;
+    };
+  };
+};

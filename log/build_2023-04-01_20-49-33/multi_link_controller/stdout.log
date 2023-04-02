@@ -1,0 +1,33 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libmulti_link_controller.so[0m
+[100%] Built target multi_link_controller
+-- Install configuration: ""
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/multi_link_controller.xml
+-- Installing: /home/user/ros2_control_example/install/multi_link_controller/lib/libmulti_link_controller.so
+-- Set runtime path of "/home/user/ros2_control_example/install/multi_link_controller/lib/libmulti_link_controller.so" to ""
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include/multi_link_controller
+-- Installing: /home/user/ros2_control_example/install/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller//config
+-- Installing: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller//config/multi_link_controller_custom.yaml
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/library_path.sh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/library_path.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/package_run_dependencies/multi_link_controller
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/parent_prefix_path/multi_link_controller
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/path.sh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/path.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.bash
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.sh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.zsh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.dsv
+-- Installing: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/package.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/packages/multi_link_controller
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/multi_link_controller
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/multi_link_controllerConfig.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/multi_link_controllerConfig-version.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/package.xml

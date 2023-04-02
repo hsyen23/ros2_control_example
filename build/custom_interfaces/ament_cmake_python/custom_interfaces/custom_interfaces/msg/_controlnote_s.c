@@ -70,13 +70,13 @@ bool custom_interfaces__msg__controlnote__convert_from_py(PyObject * _pymsg, voi
     }
     Py_DECREF(field);
   }
-  {  // joint_names
-    PyObject * field = PyObject_GetAttrString(_pymsg, "joint_names");
+  {  // the_joint_names
+    PyObject * field = PyObject_GetAttrString(_pymsg, "the_joint_names");
     if (!field) {
       return false;
     }
     {
-      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'joint_names'");
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'the_joint_names'");
       if (!seq_field) {
         Py_DECREF(field);
         return false;
@@ -87,13 +87,13 @@ bool custom_interfaces__msg__controlnote__convert_from_py(PyObject * _pymsg, voi
         Py_DECREF(field);
         return false;
       }
-      if (!rosidl_runtime_c__String__Sequence__init(&(ros_message->joint_names), size)) {
+      if (!rosidl_runtime_c__String__Sequence__init(&(ros_message->the_joint_names), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create String__Sequence ros_message");
         Py_DECREF(seq_field);
         Py_DECREF(field);
         return false;
       }
-      rosidl_runtime_c__String * dest = ros_message->joint_names.data;
+      rosidl_runtime_c__String * dest = ros_message->the_joint_names.data;
       for (Py_ssize_t i = 0; i < size; ++i) {
         PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
         if (!item) {
@@ -213,10 +213,10 @@ PyObject * custom_interfaces__msg__controlnote__convert_to_py(void * raw_ros_mes
       }
     }
   }
-  {  // joint_names
+  {  // the_joint_names
     PyObject * field = NULL;
-    size_t size = ros_message->joint_names.size;
-    rosidl_runtime_c__String * src = ros_message->joint_names.data;
+    size_t size = ros_message->the_joint_names.size;
+    rosidl_runtime_c__String * src = ros_message->the_joint_names.data;
     field = PyList_New(size);
     if (!field) {
       return NULL;
@@ -232,7 +232,7 @@ PyObject * custom_interfaces__msg__controlnote__convert_to_py(void * raw_ros_mes
     }
     assert(PySequence_Check(field));
     {
-      int rc = PyObject_SetAttrString(_pymessage, "joint_names", field);
+      int rc = PyObject_SetAttrString(_pymessage, "the_joint_names", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

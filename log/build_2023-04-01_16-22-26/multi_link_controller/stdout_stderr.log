@@ -1,0 +1,41 @@
+[35m[1mConsolidate compiler generated dependencies of target multi_link_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o[0m
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type multi_link_controller::MultiLinkController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:226:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  226 |     MultiLinkController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:227:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kduration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  227 |                             [01;35m[Kconst rclcpp::Duration &duration[m[K /*period*/) {
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[100%] [32m[1mLinking CXX shared library libmulti_link_controller.so[0m
+[100%] Built target multi_link_controller
+-- Install configuration: ""
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/multi_link_controller.xml
+-- Installing: /home/user/ros2_control_example/install/multi_link_controller/lib/libmulti_link_controller.so
+-- Set runtime path of "/home/user/ros2_control_example/install/multi_link_controller/lib/libmulti_link_controller.so" to ""
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include/multi_link_controller
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller//config
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller//config/multi_link_controller_custom.yaml
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/library_path.sh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/library_path.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/package_run_dependencies/multi_link_controller
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/parent_prefix_path/multi_link_controller
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/path.sh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/path.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.bash
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.sh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.zsh
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.dsv
+-- Installing: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/package.dsv
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/packages/multi_link_controller
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/multi_link_controller
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/multi_link_controllerConfig.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/multi_link_controllerConfig-version.cmake
+-- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/package.xml

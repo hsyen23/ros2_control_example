@@ -1,6 +1,7 @@
 {
   "package_name": "custom_interfaces",
   "non_idl_tuples": [
-    "/home/user/ros2_control_example/src/custom_interfaces:msg/Controlnote.msg"
+    "/home/user/ros2_control_example/src/custom_interfaces:msg/Controlnote.msg",
+    "/home/user/ros2_control_example/src/custom_interfaces:msg/MultiLinkPos.msg"
   ]
 }

@@ -1,0 +1,85 @@
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+-- Found std_msgs: 4.2.2 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found custom_interfaces: 0.0.0 (/home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake)
+-- Found controller_interface: 2.18.0 (/opt/ros/humble/share/controller_interface/cmake)
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found realtime_tools: 2.4.0 (/opt/ros/humble/share/realtime_tools/cmake)
+-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/user/ros2_control_example/src/multi_link_controller/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/ros2_control_example/build/multi_link_controller
+[ 50%] [32mBuilding CXX object CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+                 from [01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:22[m[K,
+                 from [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:15[m[K:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In lambda function:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:98:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct custom_interfaces::msg::MultiLinkPos_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct custom_interfaces::msg::MultiLinkPos_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kthe_joint_names[m[K’; did you mean ‘[01m[Kjoint_names[m[K’?
+   98 |                         msg->[01;31m[Kthe_joint_names[m[K.size(), joint_names_.size());
+      |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::InterfaceConfiguration multi_link_controller::MultiLinkController::command_interface_configuration() const[m[K’:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:138:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kinterface_name_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcommand_interface_name_[m[K’?
+  138 |     command_interfaces_config.names.push_back(joint + "/" + [01;31m[Kinterface_name_[m[K); // command_interfaces_[i] order is determined by this line. (command_interfaces_[0] access interface with name = command_interfaces_config.names[0])
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                             [32m[Kcommand_interface_name_[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual multi_link_controller::CallbackReturn multi_link_controller::MultiLinkController::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:199:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct custom_interfaces::msg::MultiLinkPos_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct custom_interfaces::msg::MultiLinkPos_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kthe_joint_names[m[K’; did you mean ‘[01m[Kjoint_names[m[K’?
+  199 |     msg->[01;31m[Kthe_joint_names[m[K = joint_names_;
+      |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |          [32m[Kjoint_names[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type multi_link_controller::MultiLinkController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:226:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  226 |     MultiLinkController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:227:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kduration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  227 |                             [01;35m[Kconst rclcpp::Duration &duration[m[K /*period*/) {
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/multi_link_controller.dir/build.make:76: CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/multi_link_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

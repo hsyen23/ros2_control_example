@@ -1,2 +1,4 @@
 msg/Controlnote.idl
 msg/Controlnote.msg
+msg/MultiLinkPos.idl
+msg/MultiLinkPos.msg

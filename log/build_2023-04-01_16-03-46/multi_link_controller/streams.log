@@ -1,0 +1,45 @@
+[0.008s] Invoking command in '/home/user/ros2_control_example/build/multi_link_controller': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_link_controller -- -j8 -l8
+[0.035s] [35m[1mConsolidate compiler generated dependencies of target multi_link_controller[0m
+[0.048s] [ 50%] [32mBuilding CXX object CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o[0m
+[1.833s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type multi_link_controller::MultiLinkController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.833s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:226:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.833s]   226 |     MultiLinkController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+[1.833s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.833s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:227:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kduration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.833s]   227 |                             [01;35m[Kconst rclcpp::Duration &duration[m[K /*period*/) {
+[1.833s]       |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[6.958s] [100%] [32m[1mLinking CXX shared library libmulti_link_controller.so[0m
+[7.371s] [100%] Built target multi_link_controller
+[7.378s] Invoked command in '/home/user/ros2_control_example/build/multi_link_controller' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_link_controller -- -j8 -l8
+[7.391s] Invoking command in '/home/user/ros2_control_example/build/multi_link_controller': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/multi_link_controller
+[7.395s] -- Install configuration: ""
+[7.395s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/multi_link_controller.xml
+[7.395s] -- Installing: /home/user/ros2_control_example/install/multi_link_controller/lib/libmulti_link_controller.so
+[7.402s] -- Set runtime path of "/home/user/ros2_control_example/install/multi_link_controller/lib/libmulti_link_controller.so" to ""
+[7.402s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include
+[7.402s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include/multi_link_controller
+[7.402s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp
+[7.402s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller//config
+[7.402s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller//config/multi_link_controller_custom.yaml
+[7.402s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/library_path.sh
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/library_path.dsv
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/package_run_dependencies/multi_link_controller
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/parent_prefix_path/multi_link_controller
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/ament_prefix_path.sh
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/ament_prefix_path.dsv
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/path.sh
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/path.dsv
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.bash
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.sh
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.zsh
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.dsv
+[7.403s] -- Installing: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/package.dsv
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/packages/multi_link_controller
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/multi_link_controller
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[7.403s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.404s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/multi_link_controllerConfig.cmake
+[7.404s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/multi_link_controllerConfig-version.cmake
+[7.406s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/package.xml
+[7.406s] Invoked command in '/home/user/ros2_control_example/build/multi_link_controller' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/multi_link_controller

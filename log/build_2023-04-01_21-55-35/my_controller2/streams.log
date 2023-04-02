@@ -1,0 +1,34 @@
+[0.008s] Invoking command in '/home/user/ros2_control_example/build/my_controller2': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller2 -- -j8 -l8
+[0.042s] [100%] Built target my_controller2
+[0.049s] Invoked command in '/home/user/ros2_control_example/build/my_controller2' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller2 -- -j8 -l8
+[0.063s] Invoking command in '/home/user/ros2_control_example/build/my_controller2': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/my_controller2
+[0.067s] -- Install configuration: ""
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/my_controller2.xml
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/lib/libmy_controller2.so
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/include
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/include/my_controller2
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/include/my_controller2/my_controller2.hpp
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2//config
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2//config/my_controller2_custom.yaml
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/environment/library_path.sh
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/environment/library_path.dsv
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/ament_index/resource_index/package_run_dependencies/my_controller2
+[0.068s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/ament_index/resource_index/parent_prefix_path/my_controller2
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/environment/ament_prefix_path.sh
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/environment/ament_prefix_path.dsv
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/environment/path.sh
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/environment/path.dsv
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/local_setup.bash
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/local_setup.sh
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/local_setup.zsh
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/local_setup.dsv
+[0.069s] -- Installing: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/package.dsv
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/ament_index/resource_index/packages/my_controller2
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/ament_index/resource_index/controller_interface__pluginlib__plugin/my_controller2
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/cmake/ament_cmake_export_libraries-extras.cmake
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/cmake/my_controller2Config.cmake
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/cmake/my_controller2Config-version.cmake
+[0.069s] -- Up-to-date: /home/user/ros2_control_example/install/my_controller2/share/my_controller2/package.xml
+[0.072s] Invoked command in '/home/user/ros2_control_example/build/my_controller2' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/my_controller2

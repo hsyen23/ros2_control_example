@@ -1,0 +1,9 @@
+<library path="multi_link_controller">
+  <class name="multi_link_controller/MultiLinkController"
+         type="multi_link_controller::MultiLinkController" base_class_type="controller_interface::ControllerInterface">
+  <description>
+    MultiLinkController ros2_control controller.
+  </description>
+  </class>
+</library>
+

@@ -67,6 +67,7 @@ include CMakeFiles/custom_interfaces.dir/compiler_depend.make
 include CMakeFiles/custom_interfaces.dir/progress.make
 
 CMakeFiles/custom_interfaces: /home/user/ros2_control_example/src/custom_interfaces/msg/Controlnote.msg
+CMakeFiles/custom_interfaces: /home/user/ros2_control_example/src/custom_interfaces/msg/MultiLinkPos.msg
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/custom_interfaces: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl

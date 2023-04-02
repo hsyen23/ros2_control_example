@@ -1,0 +1,35 @@
+In file included from [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:15[m[K:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:83:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before numeric constant
+   83 |   std::vector<float> P_ = {1.6 [01;31m[K0.16[m[K};
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:83:27:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   83 |   std::vector<float> P_ = [01;36m[K{[m[K1.6 0.16};
+      |                           [01;36m[K^[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:83:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before numeric constant
+   83 |   std::vector<float> P_ = {1.6 [01;31m[K0.16[m[K};
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:84:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before numeric constant
+   84 |   std::vector<float> I_ = {0.06 [01;31m[K0.006[m[K};
+      |                                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:84:27:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   84 |   std::vector<float> I_ = [01;36m[K{[m[K0.06 0.006};
+      |                           [01;36m[K^[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:84:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before numeric constant
+   84 |   std::vector<float> I_ = {0.06 [01;31m[K0.006[m[K};
+      |                                 [01;31m[K^~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:85:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before numeric constant
+   85 |   std::vector<float> D_ = {0.7 [01;31m[K0.07[m[K};
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:85:27:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   85 |   std::vector<float> D_ = [01;36m[K{[m[K0.7 0.07};
+      |                           [01;36m[K^[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:85:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before numeric constant
+   85 |   std::vector<float> D_ = {0.7 [01;31m[K0.07[m[K};
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type multi_link_controller::MultiLinkController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:240:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  240 |     MultiLinkController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/multi_link_controller.dir/build.make:76: CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/multi_link_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

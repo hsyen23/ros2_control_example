@@ -16,7 +16,8 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Controlnote.msg"
-  DEPENDENCIES std_msgs builtin_interfaces # Add packages that above messages depend on, in this case std_msgs (for stamp and frame_id) and builtin_interfaces (dependency for stamp)
+  "msg/MultiLinkPos.msg"
+  DEPENDENCIES std_msgs builtin_interfaces # Add packages that above messages depend on, in this case we need std_msgs (for stamp and frame_id) and builtin_interfaces (dependency for stamp).
 )
 
 if(BUILD_TESTING)

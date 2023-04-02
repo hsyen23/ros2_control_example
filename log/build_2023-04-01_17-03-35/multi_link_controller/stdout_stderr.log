@@ -1,0 +1,22 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o[0m
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In function ‘[01m[Kfloat round_in_2pi(float)[m[K’:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:24:17:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kfloat[m[K’ and ‘[01m[Kdouble[m[K’ to binary ‘[01m[Koperator%[m[K’
+   24 |     float m = [32m[Kr[m[K [01;31m[K%[m[K M_PI;
+      |               [32m[K~[m[K [01;31m[K^[m[K
+      |               [32m[K|[m[K
+      |               [32m[Kfloat[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type multi_link_controller::MultiLinkController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:249:48:[m[K [01;31m[Kerror: [m[K‘[01m[KI_[m[K’ was not declared in this scope; did you mean ‘[01m[KP_[m[K’?
+  249 |             float torque_output = P_ * error + [01;31m[KI_[m[K * error_integral_ + D_ * diff_error;
+      |                                                [01;31m[K^~[m[K
+      |                                                [32m[KP_[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:249:71:[m[K [01;31m[Kerror: [m[K‘[01m[KD_[m[K’ was not declared in this scope; did you mean ‘[01m[KP_[m[K’?
+  249 |             float torque_output = P_ * error + I_ * error_integral_ + [01;31m[KD_[m[K * diff_error;
+      |                                                                       [01;31m[K^~[m[K
+      |                                                                       [32m[KP_[m[K
+[01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:235:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  235 |     MultiLinkController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/multi_link_controller.dir/build.make:76: CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/multi_link_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

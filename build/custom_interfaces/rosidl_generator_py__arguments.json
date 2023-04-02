@@ -3,7 +3,8 @@
   "output_dir": "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/user/ros2_control_example/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/Controlnote.idl"
+    "/home/user/ros2_control_example/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/Controlnote.idl",
+    "/home/user/ros2_control_example/build/custom_interfaces/rosidl_adapter/custom_interfaces:msg/MultiLinkPos.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -54,6 +55,7 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
     "/home/user/ros2_control_example/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/Controlnote.idl",
+    "/home/user/ros2_control_example/build/custom_interfaces/rosidl_adapter/custom_interfaces/msg/MultiLinkPos.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

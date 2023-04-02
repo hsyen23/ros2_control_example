@@ -1,0 +1,12 @@
+[0.010s] Invoking command in '/home/user/ros2_control_example/build/my_controller2': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_controller2 -- -j8 -l8
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target my_controller2[0m
+[0.090s] [ 50%] [32mBuilding CXX object CMakeFiles/my_controller2.dir/src/my_controller2.cpp.o[0m
+[2.106s] [01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type my_controller2::MyController2::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[2.107s] [01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:223:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.107s]   223 |     MyController2::update([01;35m[Kconst rclcpp::Time &time[m[K,
+[2.107s]       |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.107s] [01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:224:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kduration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.107s]   224 |                             [01;35m[Kconst rclcpp::Duration &duration[m[K /*period*/) {
+[2.107s]       |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[7.873s] [100%] [32m[1mLinking CXX shared library libmy_controller2.so[0m
+[8.428s] [100%] Built target my_controller2

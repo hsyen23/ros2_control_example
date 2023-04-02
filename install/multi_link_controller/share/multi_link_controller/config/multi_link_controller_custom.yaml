@@ -1,0 +1,26 @@
+# Controller manager configuration
+controller_manager:
+  ros__parameters:
+    update_rate: 50  # Hz
+
+    # Define a name for controllers that we plan to use
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    multi_link_controller:
+      type: multi_link_controller/MultiLinkController
+
+# Properties of the custom controler and definition of joints to use
+multi_link_controller:
+  ros__parameters:
+    joints:
+      - arm_joint1
+      - arm_joint2
+    interface_name: effort
+    
+my_controller:
+  ros__parameters:
+    joints:
+      - arm_joint1
+      - arm_joint2
+    interface_name: position

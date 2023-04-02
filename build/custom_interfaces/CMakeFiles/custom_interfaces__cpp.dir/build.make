@@ -70,6 +70,10 @@ CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/co
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__builder.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__struct.hpp
 CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__traits.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/multi_link_pos.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__builder.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__struct.hpp
+CMakeFiles/custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__traits.hpp
 
 rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: /opt/ros/humble/shar
 rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: rosidl_adapter/custom_interfaces/msg/Controlnote.idl
+rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: rosidl_adapter/custom_interfaces/msg/MultiLinkPos.idl
 rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -131,11 +136,27 @@ rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__struct.hpp: rosid
 rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__traits.hpp: rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__traits.hpp
 
+rosidl_generator_cpp/custom_interfaces/msg/multi_link_pos.hpp: rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/multi_link_pos.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__builder.hpp: rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__builder.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__struct.hpp: rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__struct.hpp
+
+rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__traits.hpp: rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__traits.hpp
+
 custom_interfaces__cpp: CMakeFiles/custom_interfaces__cpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__builder.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__struct.hpp
 custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__traits.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__builder.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__struct.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__traits.hpp
+custom_interfaces__cpp: rosidl_generator_cpp/custom_interfaces/msg/multi_link_pos.hpp
 custom_interfaces__cpp: CMakeFiles/custom_interfaces__cpp.dir/build.make
 .PHONY : custom_interfaces__cpp
 

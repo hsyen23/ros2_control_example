@@ -31,8 +31,8 @@ MyController2::MyController2() : controller_interface::ControllerInterface() {} 
     CallbackReturn MyController2::on_init() {
         try {
             // when you pass the yaml file, parameters declare automatically, so we actually don't need these two lines?
-            auto_declare("joints", std::vector<std::string>()); // try to declare parameter in ROS named joints, and initialized with std::vector<std::string>()?
-            auto_declare("interface_name", std::string());  // try to declare parameter in ROS named interface_name, and initialized with std::string()?
+            auto_declare("joints", std::vector<std::string>()); // try to declare parameter in ROS named joints, if not declared by the yaml then initialized with std::vector<std::string>()?
+            auto_declare("interface_name", std::string());  // try to declare parameter in ROS named interface_name, if not declared by the yaml then initialized with std::string()?
         } catch (const std::exception &e) {
             fprintf(stderr, "Exception thrown during init stage with message: %s \n",
                     e.what());
@@ -46,6 +46,8 @@ MyController2::MyController2() : controller_interface::ControllerInterface() {} 
     /*
     read the parameter values and declare any required subscribers and publishers as required.
     This method is run previous to the update method call and ensures that once the control algorithm is put into action, everything is set and ready to go.
+
+    Fetch the Ros parameter and assign them to the controller instance (those protected variables).
 
     In this controller, all paramters (joints, interface_name) values are strings.
     */

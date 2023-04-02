@@ -249,8 +249,15 @@ CMakeFiles/custom_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosi
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
-  rosidl_generator_c/custom_interfaces/msg/detail/controlnote__functions.h
+  rosidl_generator_c/custom_interfaces/msg/detail/controlnote__functions.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/multi_link_pos__type_support.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/multi_link_pos__struct.h \
+  rosidl_generator_c/custom_interfaces/msg/detail/multi_link_pos__functions.h
 
+
+rosidl_generator_c/custom_interfaces/msg/detail/multi_link_pos__functions.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/multi_link_pos__struct.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
@@ -505,6 +512,8 @@ rosidl_generator_c/custom_interfaces/msg/detail/controlnote__type_support.h:
 /usr/include/python3.10/patchlevel.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+rosidl_generator_c/custom_interfaces/msg/detail/multi_link_pos__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 

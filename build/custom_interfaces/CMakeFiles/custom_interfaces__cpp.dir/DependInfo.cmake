@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__builder.hpp" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp"
   "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__struct.hpp" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp"
   "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/controlnote__traits.hpp" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp"
+  "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__builder.hpp" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp"
+  "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__struct.hpp" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp"
+  "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/multi_link_pos__traits.hpp" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp"
+  "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/multi_link_pos.hpp" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/controlnote.hpp"
   )
 
 

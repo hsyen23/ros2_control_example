@@ -38,10 +38,18 @@ ros2 topic pub -1 /set_joint_trajectory trajectory_msgs/msg/JointTrajectory  '{h
 ```
 
 # Ros2 command publish
-ros2 topic pub --once /my_controller/commands control_msgs/msg/JointJog "{joint_names: {"arm_joint1", "arm_joint2"}, displacements: {0.1, -0.1}}"
+ros2 topic pub --once /my_controller/commands control_msgs/msg/JointJog "{joint_names: ["arm_joint1", "arm_joint2"], displacements: [0.1, -0.1]}"
+
+ros2 topic pub --once /multi_link_controller/commands custom_interfaces/msg/MultiLinkPos "{joint_names: ["arm_joint1", "arm_joint2"], values: [1.5, 0.5], controllable: [false, false]}"
 
 # Task 1
 create a custom interface for communication between user and controller.
 
 # Task 2
 create my_controller2, same as my_controller but utilize the new created interface.
+
+Good PID constant for first link
+  float P_ = 1.6;
+  float I_ = 0.06;
+  float D_ = 0.7;
+  

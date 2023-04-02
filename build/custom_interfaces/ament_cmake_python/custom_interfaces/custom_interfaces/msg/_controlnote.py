@@ -65,13 +65,13 @@ class Controlnote(metaclass=Metaclass_Controlnote):
 
     __slots__ = [
         '_header',
-        '_joint_names',
+        '_the_joint_names',
         '_values',
     ]
 
     _fields_and_field_types = {
         'header': 'std_msgs/Header',
-        'joint_names': 'sequence<string>',
+        'the_joint_names': 'sequence<string>',
         'values': 'sequence<double>',
     }
 
@@ -87,7 +87,7 @@ class Controlnote(metaclass=Metaclass_Controlnote):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from std_msgs.msg import Header
         self.header = kwargs.get('header', Header())
-        self.joint_names = kwargs.get('joint_names', [])
+        self.the_joint_names = kwargs.get('the_joint_names', [])
         self.values = array.array('d', kwargs.get('values', []))
 
     def __repr__(self):
@@ -121,7 +121,7 @@ class Controlnote(metaclass=Metaclass_Controlnote):
             return False
         if self.header != other.header:
             return False
-        if self.joint_names != other.joint_names:
+        if self.the_joint_names != other.the_joint_names:
             return False
         if self.values != other.values:
             return False
@@ -147,12 +147,12 @@ class Controlnote(metaclass=Metaclass_Controlnote):
         self._header = value
 
     @builtins.property
-    def joint_names(self):
-        """Message field 'joint_names'."""
-        return self._joint_names
+    def the_joint_names(self):
+        """Message field 'the_joint_names'."""
+        return self._the_joint_names
 
-    @joint_names.setter
-    def joint_names(self, value):
+    @the_joint_names.setter
+    def the_joint_names(self, value):
         if __debug__:
             from collections.abc import Sequence
             from collections.abc import Set
@@ -166,8 +166,8 @@ class Controlnote(metaclass=Metaclass_Controlnote):
                  not isinstance(value, UserString) and
                  all(isinstance(v, str) for v in value) and
                  True), \
-                "The 'joint_names' field must be a set or sequence and each value of type 'str'"
-        self._joint_names = value
+                "The 'the_joint_names' field must be a set or sequence and each value of type 'str'"
+        self._the_joint_names = value
 
     @builtins.property
     def values(self):

@@ -17,6 +17,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/__init__.py" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_controlnote.py" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_controlnote_s.c" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_multi_link_pos.py" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/msg/_multi_link_pos_s.c" "/home/user/ros2_control_example/build/custom_interfaces/rosidl_generator_py/custom_interfaces/_custom_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

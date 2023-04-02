@@ -1,0 +1,40 @@
+[0.008s] Invoking command in '/home/user/ros2_control_example/build/multi_link_controller': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_link_controller -- -j8 -l8
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target multi_link_controller[0m
+[0.046s] [ 50%] [32mBuilding CXX object CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o[0m
+[1.839s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type multi_link_controller::MultiLinkController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.839s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:252:39:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kclamp(float&, int, int)[m[K’
+[1.839s]   252 |             torque_output = [01;31m[Kstd::clamp(torque_output, -3, 3)[m[K;
+[1.839s]       |                             [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.839s] In file included from [01m[K/usr/include/c++/11/functional:65[m[K,
+[1.839s]                  from [01m[K/opt/ros/humble/include/hardware_interface/loaned_command_interface.hpp:18[m[K,
+[1.839s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:25[m[K,
+[1.839s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[1.839s]                  from [01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:22[m[K,
+[1.839s]                  from [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:15[m[K:
+[1.839s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3656:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&)[m[K’
+[1.839s]  3656 |     [01;36m[Kclamp[m[K(const _Tp& __val, const _Tp& __lo, const _Tp& __hi)
+[1.839s]       |     [01;36m[K^~~~~[m[K
+[1.839s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3656:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.840s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:252:39:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kfloat[m[K’ and ‘[01m[Kint[m[K’)
+[1.840s]   252 |             torque_output = [01;36m[Kstd::clamp(torque_output, -3, 3)[m[K;
+[1.840s]       |                             [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.840s] In file included from [01m[K/usr/include/c++/11/functional:65[m[K,
+[1.840s]                  from [01m[K/opt/ros/humble/include/hardware_interface/loaned_command_interface.hpp:18[m[K,
+[1.840s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface_base.hpp:25[m[K,
+[1.840s]                  from [01m[K/opt/ros/humble/include/controller_interface/controller_interface.hpp:22[m[K,
+[1.840s]                  from [01m[K/home/user/ros2_control_example/src/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp:22[m[K,
+[1.840s]                  from [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:15[m[K:
+[1.840s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3674:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Compare> constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&, _Compare)[m[K’
+[1.840s]  3674 |     [01;36m[Kclamp[m[K(const _Tp& __val, const _Tp& __lo, const _Tp& __hi, _Compare __comp)
+[1.840s]       |     [01;36m[K^~~~~[m[K
+[1.840s] [01m[K/usr/include/c++/11/bits/stl_algo.h:3674:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.841s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:252:39:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kconst _Tp[m[K’ (‘[01m[Kfloat[m[K’ and ‘[01m[Kint[m[K’)
+[1.841s]   252 |             torque_output = [01;36m[Kstd::clamp(torque_output, -3, 3)[m[K;
+[1.841s]       |                             [01;36m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.841s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:236:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.841s]   236 |     MultiLinkController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+[1.841s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[3.860s] gmake[2]: *** [CMakeFiles/multi_link_controller.dir/build.make:76: CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o] Error 1
+[3.860s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/multi_link_controller.dir/all] Error 2
+[3.860s] gmake: *** [Makefile:146: all] Error 2
+[3.861s] Invoked command in '/home/user/ros2_control_example/build/multi_link_controller' returned '2': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_link_controller -- -j8 -l8
