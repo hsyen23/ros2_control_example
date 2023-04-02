@@ -17,7 +17,19 @@ multi_link_controller:
       - arm_joint1
       - arm_joint2
     interface_name: effort
-    
+    P:
+      - 3.6
+      - 0.38
+    I: 
+      - 0.22
+      - 0.016
+    D:
+      - 6.0
+      - 0.17
+    FD:
+      - 0.0
+      - 0.0
+      
 my_controller:
   ros__parameters:
     joints:

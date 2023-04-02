@@ -80,9 +80,11 @@ protected:
   // variable for PID part
   std::vector<float> previous_error_;
   std::vector<float> error_integral_;
-  std::vector<float> P_ = {1.6, 0.16};
-  std::vector<float> I_ = {0.06, 0.006};
-  std::vector<float> D_ = {0.7, 0.07};
+  // controller constant assigned by yaml
+  std::vector<double> P_;
+  std::vector<double> I_;
+  std::vector<double> D_;
+  std::vector<double> FD_;
   //float P_ = 0.16;
   //float I_ = 0.006;
   //float D_ = 0.07;

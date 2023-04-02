@@ -49,6 +49,10 @@ MultiLinkController::MultiLinkController() : controller_interface::ControllerInt
             // when you pass the yaml file, parameters declare automatically, so we actually don't need these two lines?
             auto_declare("joints", std::vector<std::string>()); // try to declare parameter in ROS named joints, if not declared by the yaml then initialized with std::vector<std::string>().
             auto_declare("command_interface_name", std::string());  // try to declare parameter in ROS named command_interface_name, if not declared by the yaml then initialized with std::string().
+            auto_declare("P", std::vector<float>());
+            auto_declare("I", std::vector<float>());
+            auto_declare("D", std::vector<float>());
+            auto_declare("FD", std::vector<float>());
         } catch (const std::exception &e) {
             fprintf(stderr, "Exception thrown during init stage with message: %s \n",
                     e.what());
@@ -94,10 +98,20 @@ MultiLinkController::MultiLinkController() : controller_interface::ControllerInt
             return error_if_empty(parameter, parameter_name);
         };
 
+        auto get_double_array_param_and_error_if_empty =
+            [&](std::vector<double> &parameter, const char *parameter_name) {
+                parameter = get_node()->get_parameter(parameter_name).as_double_array();
+                return error_if_empty(parameter, parameter_name);
+            };
+
         // return error if one of parameters has no value (being empty).
         if (
             get_string_array_param_and_error_if_empty(joint_names_, "joints") ||
-            get_string_param_and_error_if_empty(command_interface_name_, "interface_name")) {
+            get_string_param_and_error_if_empty(command_interface_name_, "interface_name") ||
+            get_double_array_param_and_error_if_empty(P_, "P") ||
+            get_double_array_param_and_error_if_empty(I_, "I") ||
+            get_double_array_param_and_error_if_empty(D_, "D") ||
+            get_double_array_param_and_error_if_empty(FD_, "FD")) {
             return CallbackReturn::ERROR;
         }
 
@@ -261,7 +275,11 @@ MultiLinkController::MultiLinkController() : controller_interface::ControllerInt
                     error_integral_before_clamp += error;
 
                     float torque_output = (P_[i] * error + I_[i] * error_integral_before_clamp + D_[i] * diff_error);
-                    float torque_output_after_clip = clip(torque_output, -20.0, 20.0);
+
+                    // add feedforward controller
+                    torque_output += FD_[i] * round_in_2pi((*current_command)->values[i]);
+
+                    float torque_output_after_clip = clip(torque_output, -5.0, 5.0);
 
                     // anti-windup check
                     bool output_saturation = (torque_output_after_clip != torque_output);
@@ -269,8 +287,11 @@ MultiLinkController::MultiLinkController() : controller_interface::ControllerInt
                     if (!(output_saturation && winded)){
                         error_integral_[i] = error_integral_before_clamp; // if winded and saturated, add zero to error integral.
                     }
+                    
                     command_interfaces_[i].set_value(torque_output_after_clip);
                 }else{
+                    previous_error_[i] = 0.0;
+                    error_integral_[i] = 0.0;
                     command_interfaces_[i].set_value(0.0);
                 }
             //RCLCPP_INFO_STREAM(get_node()->get_logger(),"Log tester");
