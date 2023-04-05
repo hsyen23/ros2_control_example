@@ -11,3 +11,6 @@ Some notes for gazebo_hardware plugin. Gazebo_hardware provides three interface:
 Therefore, we can directly controll these three value. e.g. my controller send command_interface position to 1.0. The robot in Gazebo will instantly set the postion to 1.0.
 
 Effort interface is torque for rotational joint, force for prismatic joint.
+
+## Realtime_tool illustraion
+![Alt text](picture/control_two_joints.gif "control_two_joints")
