@@ -2,7 +2,7 @@
 Contains robot model URDF and launch files.
 
 # How to display URDF model in rviz2
-![Alt text](../../picture/urdf_publishing_explanation.jpg "urdf_publishing_explanation")
+![Alt text](https://github.com/hsyen23/ros2_control_example/blob/main/picture/urdf_publishing_explanation.jpg "urdf_publishing_explanation")
 
 `robot_model/robot_state_publisher_launch.py` is a launch file to load urdf.xml to robot_state_publisher.
 
@@ -23,7 +23,7 @@ rviz2
 
 # How to display robot model in Gazebo
 ##### A. Use ros2_control plugin to publish `joint_state`
-![Alt text](picture/interaction_with_Gazebo.png "interaction_with_Gazebo")
+![Alt text](https://github.com/hsyen23/ros2_control_example/blob/main/picture/ros2_control_Gazebo_pipeline.jpg "ros2_control_Gazebo_pipeline")
 
 `robot_model/gazeobo_sim.launch.py` is a launch file for simulation in Gazebo.
 
@@ -35,7 +35,7 @@ Note that we are using ros2_control Gazebo plugin in `robot.urdf.xacro` now. The
 ros2 run controller_manager spawner joint_state_broadcaster
 ```
 ##### B. If we don't want to use ros2_control to publish `joint_state`
-![Alt text](picture/interaction_with_Gazebo.png "interaction_with_Gazebo")
+![Alt text](https://github.com/hsyen23/ros2_control_example/blob/main/picture/interaction_with_Gazebo.png "interaction_with_Gazebo")
 
 We need to remove `include gazebo_ros2_control.xacro` in `robot.urdf.xacro`, and add `gazebo_ros_joint_state_publisher` plugin in `gazebo.xacro`.
   
