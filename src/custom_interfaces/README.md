@@ -3,7 +3,7 @@ First, check the official website to understand the structure of Header.
 
 https://docs.ros2.org/latest/api/std_msgs/msg/Header.html
 
-## First, Header has dependency too!
+## First of all, `Header` has dependency too!
 From the official website, it's clear that std_msgs/msg/Header contains another message builtin_interfaces/msg/Time.
 
 Therefore, to use Header, we require two packages (std_msgs and builtin_interfaces) as dependencies.
@@ -35,7 +35,7 @@ Interface is a idea, and Message is the object to fullfill this idea.
 
 Therefore, ".msg", ".srv", and ".action" all are interfaces.
 
-## Naming rule
+## Rule of name
 The interface with name std_msgs/msg/Header represents:
 
 std_msgs: The package name that generates this message. That is why we can use find_package(std_msgs REQUIRED).
@@ -45,7 +45,7 @@ msg: Shows that this is message type interface.
 Header: The file name is Header.msg. Therefore, we can find the message file in std_msgs/msg/Header.msg.
 
 ## Don't need to sepcify Header structure again in custom message
-Like use standard data type, just write
+Like use standard data type, just write in `.msg`.
 ```
 std_msgs/Header header
 string[] joint_names

@@ -2,7 +2,7 @@ This is a forward controller, it reads the topic and then assign the value to th
 
 The controller can only control all joints with the same command_interface.
 
-That's being said, joint1 and joint2 cannot be controlled by different command_interface. e.g. position for joint1, velocity for joint2.
+That's being said joint1 and joint2 cannot be controlled by different command_interface. e.g. position for joint1, velocity for joint2.
 
 Same for reading state_interface, it can only read the interface that is being control. e.g. my command_interface is effort, then I can only read value from effort interface.
 

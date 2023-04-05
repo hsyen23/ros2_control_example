@@ -33,7 +33,7 @@ Modify content with
 
 # Modify CMakeLists.txt
 ## find_package
-Delete the line because we no longer use the message package.
+Delete the line because we no longer use `control_msgs` message package.
 ```
 find_package(control_msgs REQUIRED)
 ```
