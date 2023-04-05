@@ -13,4 +13,4 @@ Therefore, we can directly controll these three value. e.g. my controller send c
 Effort interface is torque for rotational joint, force for prismatic joint.
 
 ## Realtime_tool illustraion
-![Alt text](picture/control_two_joints.gif "control_two_joints")
+![Alt text](https://github.com/hsyen23/ros2_control_example/blob/main/picture/realtime_tool.jpg "realtime_tool")
