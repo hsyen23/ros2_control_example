@@ -126,4 +126,4 @@ Remember setup joints, parameters, and plugin correctly in `ros2_control_custom_
 Check `test_ros2_control.launch.py`
 
 # How to read hardware interface parameter by `hardware_interface::HardwareInfo & info`
-![Alt text](picture/control_one_joint.gif "how_to_read_hardware_interface_parameter")
+![Alt text](https://github.com/hsyen23/ros2_control_example/blob/main/picture/how_to_read_hardware_interface_parameter.png "how_to_read_hardware_interface_parameter")
