@@ -1,0 +1,48 @@
+[0.019s] Invoking command in '/home/user/ros2_control_example/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target my_hardware_interface[0m
+[0.119s] [ 50%] [32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/my_hardware_interface.cpp.o[0m
+[0.914s] In file included from [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:7[m[K:
+[0.914s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:64:15:[m[K [01;31m[Kerror: [m[K‘[01m[Khardware_interface::return_type my_hardwares::MyHardware::read()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[0.914s]    64 |   return_type [01;31m[Kread[m[K() override;
+[0.914s]       |               [01;31m[K^~~~[m[K
+[0.914s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:66:15:[m[K [01;31m[Kerror: [m[K‘[01m[Khardware_interface::return_type my_hardwares::MyHardware::write()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[0.914s]    66 |   return_type [01;31m[Kwrite[m[K() override;
+[0.914s]       |               [01;31m[K^~~~~[m[K
+[2.294s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:22:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[2.294s]    22 | [01;31m[KCallbackReturn[m[K MyHardware::on_init(const hardware_interface::HardwareInfo & info) // info has all information passed in from .yaml
+[2.294s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.304s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:124:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[2.304s]   124 | [01;31m[KCallbackReturn[m[K MyHardware::on_activate(const rclcpp_lifecycle::State & previous_state)
+[2.304s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.305s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:147:1:[m[K [01;31m[Kerror: [m[K‘[01m[KCallbackReturn[m[K’ does not name a type
+[2.305s]   147 | [01;31m[KCallbackReturn[m[K MyHardware::on_deactivate(const rclcpp_lifecycle::State & previous_state)
+[2.305s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.309s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:[m[K In member function ‘[01m[Khardware_interface::return_type my_hardwares::MyHardware::read()[m[K’:
+[2.309s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:162:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kids[m[K’ was not declared in this scope
+[2.309s]   162 |   for (uint i = 0; i < [01;31m[Kids[m[K.size(); i++) {
+[2.309s]       |                        [01;31m[K^~~[m[K
+[2.708s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57[m[K,
+[2.709s]                  from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+[2.709s]                  from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+[2.709s]                  from [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:224[m[K:
+[2.709s] /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = my_hardwares::MyHardware; B = hardware_interface::SystemInterface][m[K’:
+[2.709s] [01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[2.709s] [01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Kmy_hardwares::MyHardware[m[K’
+[2.709s]   218 |     return [01;31m[Knew C[m[K;
+[2.709s]       |            [01;31m[K^~~~~[m[K
+[2.709s] In file included from [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:7[m[K:
+[2.709s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:48:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Kmy_hardwares::MyHardware[m[K’:
+[2.710s]    48 | class [01;36m[KMyHardware[m[K
+[2.710s]       |       [01;36m[K^~~~~~~~~~[m[K
+[2.710s] In file included from [01m[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:9[m[K,
+[2.710s]                  from [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:7[m[K:
+[2.710s] [01m[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:173:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[2.710s]   173 |   virtual return_type [01;36m[Kread[m[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;
+[2.710s]       |                       [01;36m[K^~~~[m[K
+[2.710s] [01m[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:184:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[2.710s]   184 |   virtual return_type [01;36m[Kwrite[m[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;
+[2.710s]       |                       [01;36m[K^~~~~[m[K
+[2.758s] gmake[2]: *** [CMakeFiles/my_hardware_interface.dir/build.make:76: CMakeFiles/my_hardware_interface.dir/src/my_hardware_interface.cpp.o] Error 1
+[2.758s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_hardware_interface.dir/all] Error 2
+[2.758s] gmake: *** [Makefile:146: all] Error 2
+[2.761s] Invoked command in '/home/user/ros2_control_example/build/my_hardware_interface' returned '2': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8

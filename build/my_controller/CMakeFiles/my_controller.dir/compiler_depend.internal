@@ -703,8 +703,8 @@ CMakeFiles/my_controller.dir/src/my_controller.cpp.o
  /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/transition.hpp
  /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node_impl.hpp
  /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_publisher.hpp
- /opt/ros/humble/include/realtime_tools/realtime_buffer.h
- /opt/ros/humble/include/realtime_tools/realtime_publisher.h
+ /opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h
+ /opt/ros/humble/include/realtime_tools/realtime_tools/realtime_publisher.h
  /opt/ros/humble/include/control_msgs/control_msgs/msg/joint_controller_state.hpp
  /opt/ros/humble/include/control_msgs/control_msgs/msg/detail/joint_controller_state__struct.hpp
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp

@@ -1,0 +1,16 @@
+WARNING: Package name "my_fake_hardware_SDK" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::read_position_data(int, double, std::string)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:63:66:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Koutput[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-parameter-Wunused-but-set-parameter]8;;[m[K]
+   63 | MyFakeHardware::read_position_data(int component_id, [01;35m[Kdouble output[m[K, std::string Log)
+      |                                                      [01;35m[K~~~~~~~^~~~~~[m[K
+
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::read_velocity_data(int, double, std::string)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:73:66:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Koutput[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-parameter-Wunused-but-set-parameter]8;;[m[K]
+   73 | MyFakeHardware::read_velocity_data(int component_id, [01;35m[Kdouble output[m[K, std::string Log)
+      |                                                      [01;35m[K~~~~~~~^~~~~~[m[K
+
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::read_effort_data(int, double, std::string)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:83:64:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Koutput[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-parameter-Wunused-but-set-parameter]8;;[m[K]
+   83 | l MyFakeHardware::read_effort_data(int component_id, [01;35m[Kdouble output[m[K, std::string Log)
+      |                                                      [01;35m[K~~~~~~~^~~~~~[m[K
+

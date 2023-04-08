@@ -1,0 +1,58 @@
+[0.017s] Invoking command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_fake_hardware_SDK -- -j8 -l8
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target my_fake_hardware_SDK[0m
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/my_fake_hardware_SDK.dir/src/my_fake_hardware_SDK.cpp.o[0m
+[0.218s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::init(std::string, int, int, char**)[m[K’:
+[0.218s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:6:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[0.219s]     6 |         (*Log) = [01;35m[K"Fail to connect with port"[m[K;
+[0.219s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.219s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:10:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[0.219s]    10 |         (*Log) = [01;35m[K"Baud rate is not corret."[m[K;
+[0.219s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.219s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:14:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[0.219s]    14 |         (*Log) = [01;35m[K"Number of Joints must be more than 0."[m[K;
+[0.219s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.219s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::ping(int, char**)[m[K’:
+[0.219s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:27:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[0.219s]    27 |         (*Log) = [01;35m[K"Pin fail with invalid ID."[m[K;
+[0.219s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.219s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::write_position_data(int, double, char**)[m[K’:
+[0.219s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:36:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[0.220s]    36 |         (*Log) = [01;35m[K"Writing position data fail with invalid ID."[m[K;
+[0.220s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.220s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::write_velocity_data(int, double, char**)[m[K’:
+[0.220s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:46:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[0.220s]    46 |         (*Log) = [01;35m[K"Writing velocity data fail with invalid ID."[m[K;
+[0.220s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.220s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::write_effort_data(int, double, char**)[m[K’:
+[0.220s] [01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:56:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[0.220s]    56 |         (*Log) = [01;35m[K"Writing effort data fail with invalid ID."[m[K;
+[0.220s]       |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.298s] [100%] [32m[1mLinking CXX static library libmy_fake_hardware_SDK.a[0m
+[0.320s] [100%] Built target my_fake_hardware_SDK
+[0.327s] Invoked command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_fake_hardware_SDK -- -j8 -l8
+[0.345s] Invoking command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_fake_hardware_SDK
+[0.350s] -- Install configuration: ""
+[0.350s] -- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/lib/libmy_fake_hardware_SDK.a
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/include
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/include/my_fake_hardware_SDK
+[0.351s] -- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/include/my_fake_hardware_SDK/my_fake_hardware_SDK.hpp
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/library_path.sh
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/library_path.dsv
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/ament_index/resource_index/package_run_dependencies/my_fake_hardware_SDK
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/ament_index/resource_index/parent_prefix_path/my_fake_hardware_SDK
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/ament_prefix_path.sh
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/ament_prefix_path.dsv
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/path.sh
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/path.dsv
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.bash
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.sh
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.zsh
+[0.351s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.dsv
+[0.351s] -- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/package.dsv
+[0.352s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/ament_index/resource_index/packages/my_fake_hardware_SDK
+[0.352s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.352s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/ament_cmake_export_libraries-extras.cmake
+[0.352s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/my_fake_hardware_SDKConfig.cmake
+[0.352s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/my_fake_hardware_SDKConfig-version.cmake
+[0.352s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/package.xml
+[0.353s] Invoked command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_fake_hardware_SDK

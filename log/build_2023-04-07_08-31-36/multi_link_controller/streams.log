@@ -1,0 +1,67 @@
+[0.013s] Invoking command in '/home/user/ros2_control_example/build/multi_link_controller': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_link_controller -- -j8 -l8
+[0.031s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.144s] -- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)
+[0.163s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.165s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.169s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.178s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.191s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.235s] -- Found custom_interfaces: 0.0.0 (/home/user/ros2_control_example/install/custom_interfaces/share/custom_interfaces/cmake)
+[0.282s] -- Found controller_interface: 2.24.1 (/opt/ros/humble/share/controller_interface/cmake)
+[0.768s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.769s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.860s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.090s] -- Found realtime_tools: 2.5.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[1.122s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[1.380s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.753s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.753s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/user/ros2_control_example/src/multi_link_controller/include>
+[1.753s] -- Configured cppcheck exclude dirs and/or files: 
+[1.753s] -- Added test 'lint_cmake' to check CMake code style
+[1.754s] -- Added test 'uncrustify' to check C / C++ code style
+[1.754s] -- Configured uncrustify additional arguments: 
+[1.754s] -- Added test 'xmllint' to check XML markup files
+[1.757s] -- Configuring done
+[1.783s] -- Generating done
+[1.784s] -- Build files have been written to: /home/user/ros2_control_example/build/multi_link_controller
+[1.807s] [35m[1mConsolidate compiler generated dependencies of target multi_link_controller[0m
+[1.820s] [ 50%] [32mBuilding CXX object CMakeFiles/multi_link_controller.dir/src/multi_link_controller.cpp.o[0m
+[3.787s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type multi_link_controller::MultiLinkController::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[3.787s] [01m[K/home/user/ros2_control_example/src/multi_link_controller/src/multi_link_controller.cpp:258:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.787s]   258 |     MultiLinkController::update([01;35m[Kconst rclcpp::Time &time[m[K,
+[3.787s]       |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[9.489s] [100%] [32m[1mLinking CXX shared library libmulti_link_controller.so[0m
+[10.078s] [100%] Built target multi_link_controller
+[10.085s] Invoked command in '/home/user/ros2_control_example/build/multi_link_controller' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/multi_link_controller -- -j8 -l8
+[10.099s] Invoking command in '/home/user/ros2_control_example/build/multi_link_controller': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/multi_link_controller
+[10.104s] -- Install configuration: ""
+[10.104s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/multi_link_controller.xml
+[10.106s] -- Installing: /home/user/ros2_control_example/install/multi_link_controller/lib/libmulti_link_controller.so
+[10.111s] -- Set runtime path of "/home/user/ros2_control_example/install/multi_link_controller/lib/libmulti_link_controller.so" to ""
+[10.111s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include
+[10.111s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include/multi_link_controller
+[10.111s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/include/multi_link_controller/multi_link_controller.hpp
+[10.111s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller//config
+[10.111s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller//config/multi_link_controller_custom.yaml
+[10.111s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/library_path.sh
+[10.111s] -- Installing: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/library_path.dsv
+[10.111s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/package_run_dependencies/multi_link_controller
+[10.112s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/parent_prefix_path/multi_link_controller
+[10.112s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/ament_prefix_path.sh
+[10.112s] -- Installing: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/ament_prefix_path.dsv
+[10.112s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/path.sh
+[10.112s] -- Installing: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/environment/path.dsv
+[10.112s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.bash
+[10.112s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.sh
+[10.112s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.zsh
+[10.112s] -- Installing: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/local_setup.dsv
+[10.112s] -- Installing: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/package.dsv
+[10.113s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/packages/multi_link_controller
+[10.113s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/multi_link_controller
+[10.113s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.113s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[10.113s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.113s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/multi_link_controllerConfig.cmake
+[10.113s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/cmake/multi_link_controllerConfig-version.cmake
+[10.113s] -- Up-to-date: /home/user/ros2_control_example/install/multi_link_controller/share/multi_link_controller/package.xml
+[10.116s] Invoked command in '/home/user/ros2_control_example/build/multi_link_controller' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/ros2_control_example/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/multi_link_controller

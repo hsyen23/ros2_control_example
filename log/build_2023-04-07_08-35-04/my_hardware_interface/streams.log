@@ -1,0 +1,32 @@
+[0.016s] Invoking command in '/home/user/ros2_control_example/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8
+[0.052s] [100%] Built target my_hardware_interface
+[0.059s] Invoked command in '/home/user/ros2_control_example/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8
+[0.073s] Invoking command in '/home/user/ros2_control_example/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/my_hardware_interface
+[0.078s] -- Install configuration: ""
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/my_hardwares.xml
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/lib/libmy_hardware_interface.so
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/include
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/include/my_hardware_interface
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.sh
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.dsv
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/package_run_dependencies/my_hardware_interface
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/parent_prefix_path/my_hardware_interface
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.sh
+[0.078s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.dsv
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/path.sh
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/path.dsv
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.bash
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.sh
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.zsh
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.dsv
+[0.079s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/package.dsv
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/packages/my_hardware_interface
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_hardware_interface
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig.cmake
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig-version.cmake
+[0.079s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/package.xml
+[0.081s] Invoked command in '/home/user/ros2_control_example/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/my_hardware_interface

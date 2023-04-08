@@ -1,0 +1,32 @@
+[0.017s] Invoking command in '/home/user/ros2_control_example/build/my_hardware_interface': CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_hardware_interface:/home/user/ros2_control_example/install/my_controller2:/home/user/ros2_control_example/install/my_controller:/home/user/ros2_control_example/install/multi_link_controller:/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8
+[0.056s] [100%] Built target my_hardware_interface
+[0.064s] Invoked command in '/home/user/ros2_control_example/build/my_hardware_interface' returned '0': CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_hardware_interface:/home/user/ros2_control_example/install/my_controller2:/home/user/ros2_control_example/install/my_controller:/home/user/ros2_control_example/install/multi_link_controller:/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8
+[0.080s] Invoking command in '/home/user/ros2_control_example/build/my_hardware_interface': CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_hardware_interface:/home/user/ros2_control_example/install/my_controller2:/home/user/ros2_control_example/install/my_controller:/home/user/ros2_control_example/install/multi_link_controller:/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_hardware_interface
+[0.085s] -- Install configuration: ""
+[0.085s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/my_hardwares.xml
+[0.085s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/lib/libmy_hardware_interface.so
+[0.085s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/include
+[0.085s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/include/my_hardware_interface
+[0.085s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp
+[0.085s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.sh
+[0.085s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.dsv
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/package_run_dependencies/my_hardware_interface
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/parent_prefix_path/my_hardware_interface
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.sh
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.dsv
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/path.sh
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/path.dsv
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.bash
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.sh
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.zsh
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.dsv
+[0.086s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/package.dsv
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/packages/my_hardware_interface
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_hardware_interface
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.086s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[0.087s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.087s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig.cmake
+[0.087s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig-version.cmake
+[0.087s] -- Up-to-date: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/package.xml
+[0.089s] Invoked command in '/home/user/ros2_control_example/build/my_hardware_interface' returned '0': CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/home/user/ros2_control_example/install/robot_model:/home/user/ros2_control_example/install/my_hardware_interface:/home/user/ros2_control_example/install/my_controller2:/home/user/ros2_control_example/install/my_controller:/home/user/ros2_control_example/install/multi_link_controller:/home/user/ros2_control_example/install/custom_interfaces:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_hardware_interface

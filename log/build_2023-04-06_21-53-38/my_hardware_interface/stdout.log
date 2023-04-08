@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target my_hardware_interface[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/my_hardware_interface.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libmy_hardware_interface.so[0m
+[100%] Built target my_hardware_interface
+-- Install configuration: ""
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/my_hardwares.xml
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/lib/libmy_hardware_interface.so
+-- Set runtime path of "/home/user/ros2_control_example/install/my_hardware_interface/lib/libmy_hardware_interface.so" to ""
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/include
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/include/my_hardware_interface
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.sh
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.dsv
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/package_run_dependencies/my_hardware_interface
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/parent_prefix_path/my_hardware_interface
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.sh
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.dsv
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/path.sh
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/path.dsv
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.bash
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.sh
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.zsh
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.dsv
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/package.dsv
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/packages/my_hardware_interface
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_hardware_interface
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig.cmake
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig-version.cmake
+-- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/package.xml

@@ -1,0 +1,4 @@
+Invoking command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_fake_hardware_SDK -- -j8 -l8
+Invoked command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_fake_hardware_SDK -- -j8 -l8
+Invoking command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_fake_hardware_SDK
+Invoked command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_fake_hardware_SDK

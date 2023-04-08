@@ -1,0 +1,29 @@
+[0.022s] Invoking command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_fake_hardware_SDK -- -j8 -l8
+[0.056s] [100%] Built target my_fake_hardware_SDK
+[0.066s] Invoked command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/user/ros2_control_example/build/my_fake_hardware_SDK -- -j8 -l8
+[0.099s] Invoking command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_fake_hardware_SDK
+[0.107s] -- Install configuration: ""
+[0.108s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/lib/libmy_fake_hardware_SDK.a
+[0.108s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/include
+[0.110s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/include/my_fake_hardware_SDK
+[0.110s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/include/my_fake_hardware_SDK/my_fake_hardware_SDK.hpp
+[0.110s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/library_path.sh
+[0.110s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/library_path.dsv
+[0.110s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/ament_index/resource_index/package_run_dependencies/my_fake_hardware_SDK
+[0.111s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/ament_index/resource_index/parent_prefix_path/my_fake_hardware_SDK
+[0.111s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/ament_prefix_path.sh
+[0.112s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/ament_prefix_path.dsv
+[0.113s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/path.sh
+[0.114s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/path.dsv
+[0.114s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.bash
+[0.114s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.sh
+[0.114s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.zsh
+[0.114s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.dsv
+[0.114s] -- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/package.dsv
+[0.115s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/ament_index/resource_index/packages/my_fake_hardware_SDK
+[0.115s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.115s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/ament_cmake_export_libraries-extras.cmake
+[0.115s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/my_fake_hardware_SDKConfig.cmake
+[0.115s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/my_fake_hardware_SDKConfig-version.cmake
+[0.116s] -- Up-to-date: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/package.xml
+[0.129s] Invoked command in '/home/user/ros2_control_example/build/my_fake_hardware_SDK' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/user/ros2_control_example/build/my_fake_hardware_SDK

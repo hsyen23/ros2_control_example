@@ -95,4 +95,5 @@
     <xacro:include filename="gazebo.xacro"/>
 
     <xacro:include filename="gazebo_ros2_control.xacro"/>
+    
 </robot>

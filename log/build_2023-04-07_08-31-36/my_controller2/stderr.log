@@ -1,0 +1,7 @@
+[01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type my_controller2::MyController2::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:223:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  223 |     MyController2::update([01;35m[Kconst rclcpp::Time &time[m[K,
+      |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_controller2/src/my_controller2.cpp:224:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kduration[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  224 |                             [01;35m[Kconst rclcpp::Duration &duration[m[K /*period*/) {
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K

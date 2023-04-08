@@ -1,0 +1,63 @@
+[0.010s] Invoking command in '/home/user/ros2_control_example/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target my_hardware_interface[0m
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/my_hardware_interface.cpp.o[0m
+[1.775s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn my_hardwares::MyHardware::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[1.775s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:135:26:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[1.775s]   135 |   rclcpp::Time end_period[01;35m[K()[m[K;
+[1.776s]       |                          [01;35m[K^~[m[K
+[1.776s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:135:26:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[1.776s]   135 |   rclcpp::Time end_period[01;36m[K()[m[K;
+[1.776s]       |                          [01;36m[K^~[m[K
+[1.776s]       |                          [31m[K--[m[K
+[1.776s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:135:26:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to value-initialize a variable
+[1.776s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:136:26:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[1.776s]   136 |   rclcpp::Duration period[01;35m[K()[m[K;
+[1.777s]       |                          [01;35m[K^~[m[K
+[1.777s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:136:26:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[1.777s]   136 |   rclcpp::Duration period[01;36m[K()[m[K;
+[1.777s]       |                          [01;36m[K^~[m[K
+[1.777s]       |                          [31m[K--[m[K
+[1.777s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:136:26:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to value-initialize a variable
+[1.777s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:138:8:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Time()[m[K’ to ‘[01m[Kconst rclcpp::Time&[m[K’
+[1.777s]   138 |   read([01;31m[Kend_period[m[K, period);
+[1.777s]       |        [01;31m[K^~~~~~~~~~[m[K
+[1.777s]       |        [01;31m[K|[m[K
+[1.778s]       |        [01;31m[Krclcpp::Time()[m[K
+[1.778s] In file included from [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:7[m[K:
+[1.778s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:65:41:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvirtual hardware_interface::return_type my_hardwares::MyHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[1.778s]    65 |   return_type read([01;36m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period) override;
+[1.778s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.778s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:140:9:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Time()[m[K’ to ‘[01m[Kconst rclcpp::Time&[m[K’
+[1.778s]   140 |   write([01;31m[Kend_period[m[K, period);
+[1.778s]       |         [01;31m[K^~~~~~~~~~[m[K
+[1.778s]       |         [01;31m[K|[m[K
+[1.778s]       |         [01;31m[Krclcpp::Time()[m[K
+[1.779s] In file included from [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:7[m[K:
+[1.779s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:67:42:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvirtual hardware_interface::return_type my_hardwares::MyHardware::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[1.779s]    67 |   return_type write([01;36m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period) override;
+[1.779s]       |                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.779s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:124:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.779s]   124 | CallbackReturn MyHardware::on_activate([01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+[1.779s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.779s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn my_hardwares::MyHardware::on_deactivate(const rclcpp_lifecycle::State&)[m[K’:
+[1.779s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:151:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.779s]   151 | CallbackReturn MyHardware::on_deactivate([01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+[1.779s]       |                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.780s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type my_hardwares::MyHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.780s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:160:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.780s]   160 | return_type MyHardware::read([01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period)
+[1.780s]       |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.780s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:160:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.780s]   160 | return_type MyHardware::read(const rclcpp::Time & time, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[1.780s]       |                                                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.780s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type my_hardwares::MyHardware::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.780s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:178:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.781s]   178 | return_type MyHardware::write([01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period)
+[1.781s]       |                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.781s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:178:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.781s]   178 | return_type MyHardware::write(const rclcpp::Time & time, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[1.781s]       |                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.224s] gmake[2]: *** [CMakeFiles/my_hardware_interface.dir/build.make:76: CMakeFiles/my_hardware_interface.dir/src/my_hardware_interface.cpp.o] Error 1
+[2.224s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_hardware_interface.dir/all] Error 2
+[2.224s] gmake: *** [Makefile:146: all] Error 2
+[2.226s] Invoked command in '/home/user/ros2_control_example/build/my_hardware_interface' returned '2': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8

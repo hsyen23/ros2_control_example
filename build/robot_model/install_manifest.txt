@@ -1,10 +1,13 @@
 /home/user/ros2_control_example/install/robot_model/share/robot_model/description/robot.urdf.xacro
 /home/user/ros2_control_example/install/robot_model/share/robot_model/description/gazebo_ros2_control.xacro
+/home/user/ros2_control_example/install/robot_model/share/robot_model/description/ros2_control_custom_hardware_interface.xacro
 /home/user/ros2_control_example/install/robot_model/share/robot_model/description/include.xacro
+/home/user/ros2_control_example/install/robot_model/share/robot_model/description/test_ros2_control.urdf.xacro
 /home/user/ros2_control_example/install/robot_model/share/robot_model/description/gazebo.xacro
 /home/user/ros2_control_example/install/robot_model/share/robot_model/launch/gazeobo_sim.launch.py
+/home/user/ros2_control_example/install/robot_model/share/robot_model/launch/test_ros2_control.launch.py
 /home/user/ros2_control_example/install/robot_model/share/robot_model/launch/robot_state_publisher_launch.py
-/home/user/ros2_control_example/install/robot_model/share/robot_model/config/my_controllers.yaml
+/home/user/ros2_control_example/install/robot_model/share/robot_model/config/my_controllers_for_fake_hardware_interface.yaml
 /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/package_run_dependencies/robot_model
 /home/user/ros2_control_example/install/robot_model/share/ament_index/resource_index/parent_prefix_path/robot_model
 /home/user/ros2_control_example/install/robot_model/share/robot_model/environment/ament_prefix_path.sh

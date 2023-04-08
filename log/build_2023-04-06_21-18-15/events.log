@@ -1,0 +1,79 @@
+[0.000000] (-) TimerEvent: {}
+[0.000755] (-) JobUnselected: {'identifier': 'custom_interfaces'}
+[0.000805] (-) JobUnselected: {'identifier': 'multi_link_controller'}
+[0.000896] (-) JobUnselected: {'identifier': 'my_controller'}
+[0.000913] (-) JobUnselected: {'identifier': 'my_controller2'}
+[0.000939] (-) JobUnselected: {'identifier': 'my_fake_hardware_SDK'}
+[0.000955] (-) JobUnselected: {'identifier': 'robot_model'}
+[0.001008] (my_hardware_interface) JobQueued: {'identifier': 'my_hardware_interface', 'dependencies': OrderedDict([('my_fake_hardware_SDK', '/home/user/ros2_control_example/install/my_fake_hardware_SDK')])}
+[0.001052] (my_hardware_interface) JobStarted: {'identifier': 'my_hardware_interface'}
+[0.008599] (my_hardware_interface) JobProgress: {'identifier': 'my_hardware_interface', 'progress': 'cmake'}
+[0.009067] (my_hardware_interface) JobProgress: {'identifier': 'my_hardware_interface', 'progress': 'build'}
+[0.009639] (my_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_control_example/build/my_hardware_interface', '--', '-j8', '-l8'], 'cwd': '/home/user/ros2_control_example/build/my_hardware_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1520'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/user/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:@/tmp/.ICE-unix/1501,unix/user-ASUS-TUF-Gaming-F17-FX706LI-FX706LI:/tmp/.ICE-unix/1501'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7b6d507e_b345_4866_95e2_b65190e316d9'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.131'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_control_example/build/my_hardware_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble')]), 'shell': False}
+[0.038377] (my_hardware_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_hardware_interface\x1b[0m\n'}
+[0.050561] (my_hardware_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/my_hardware_interface.cpp.o\x1b[0m\n'}
+[0.099427] (-) TimerEvent: {}
+[0.199656] (-) TimerEvent: {}
+[0.299923] (-) TimerEvent: {}
+[0.400194] (-) TimerEvent: {}
+[0.500541] (-) TimerEvent: {}
+[0.563038] (my_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:7\x1b[m\x1b[K:\n'}
+[0.563313] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:64:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type my_hardwares::MyHardware::read()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[0.563456] (my_hardware_interface) StderrLine: {'line': b'   64 |   return_type \x1b[01;31m\x1b[Kread\x1b[m\x1b[K() override;\n'}
+[0.563586] (my_hardware_interface) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[0.563648] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:66:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type my_hardwares::MyHardware::write()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[0.563711] (my_hardware_interface) StderrLine: {'line': b'   66 |   return_type \x1b[01;31m\x1b[Kwrite\x1b[m\x1b[K() override;\n'}
+[0.563772] (my_hardware_interface) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[0.600662] (-) TimerEvent: {}
+[0.700980] (-) TimerEvent: {}
+[0.801273] (-) TimerEvent: {}
+[0.901583] (-) TimerEvent: {}
+[1.001923] (-) TimerEvent: {}
+[1.102218] (-) TimerEvent: {}
+[1.202516] (-) TimerEvent: {}
+[1.302814] (-) TimerEvent: {}
+[1.403105] (-) TimerEvent: {}
+[1.503518] (-) TimerEvent: {}
+[1.603905] (-) TimerEvent: {}
+[1.704274] (-) TimerEvent: {}
+[1.803287] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:22:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCallbackReturn\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.803544] (my_hardware_interface) StderrLine: {'line': b'   22 | \x1b[01;31m\x1b[KCallbackReturn\x1b[m\x1b[K MyHardware::on_init(const hardware_interface::HardwareInfo & info) // info has all information passed in from .yaml\n'}
+[1.803698] (my_hardware_interface) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.804327] (-) TimerEvent: {}
+[1.811500] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:124:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCallbackReturn\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.811755] (my_hardware_interface) StderrLine: {'line': b'  124 | \x1b[01;31m\x1b[KCallbackReturn\x1b[m\x1b[K MyHardware::on_activate(const rclcpp_lifecycle::State & previous_state)\n'}
+[1.811885] (my_hardware_interface) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.813259] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:147:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCallbackReturn\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.813341] (my_hardware_interface) StderrLine: {'line': b'  147 | \x1b[01;31m\x1b[KCallbackReturn\x1b[m\x1b[K MyHardware::on_deactivate(const rclcpp_lifecycle::State & previous_state)\n'}
+[1.813397] (my_hardware_interface) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.904457] (-) TimerEvent: {}
+[2.004772] (-) TimerEvent: {}
+[2.105144] (-) TimerEvent: {}
+[2.187258] (my_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57\x1b[m\x1b[K,\n'}
+[2.187530] (my_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55\x1b[m\x1b[K,\n'}
+[2.187724] (my_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40\x1b[m\x1b[K,\n'}
+[2.187867] (my_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:224\x1b[m\x1b[K:\n'}
+[2.188013] (my_hardware_interface) StderrLine: {'line': b'/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = my_hardwares::MyHardware; B = hardware_interface::SystemInterface]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.188105] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:\x1b[m\x1b[K   required from here\n'}
+[2.188197] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid new-expression of abstract class type \xe2\x80\x98\x1b[01m\x1b[Kmy_hardwares::MyHardware\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.188289] (my_hardware_interface) StderrLine: {'line': b'  218 |     return \x1b[01;31m\x1b[Knew C\x1b[m\x1b[K;\n'}
+[2.188381] (my_hardware_interface) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.188471] (my_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:7\x1b[m\x1b[K:\n'}
+[2.188573] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:48:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  because the following virtual functions are pure within \xe2\x80\x98\x1b[01m\x1b[Kmy_hardwares::MyHardware\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.188665] (my_hardware_interface) StderrLine: {'line': b'   48 | class \x1b[01;36m\x1b[KMyHardware\x1b[m\x1b[K\n'}
+[2.188757] (my_hardware_interface) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.188856] (my_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp:9\x1b[m\x1b[K,\n'}
+[2.188946] (my_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:7\x1b[m\x1b[K:\n'}
+[2.189038] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:173:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::read(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.189158] (my_hardware_interface) StderrLine: {'line': b'  173 |   virtual return_type \x1b[01;36m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[2.189251] (my_hardware_interface) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.189340] (my_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:184:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::write(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.189432] (my_hardware_interface) StderrLine: {'line': b'  184 |   virtual return_type \x1b[01;36m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[2.189521] (my_hardware_interface) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.205236] (-) TimerEvent: {}
+[2.236540] (my_hardware_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_hardware_interface.dir/build.make:76: CMakeFiles/my_hardware_interface.dir/src/my_hardware_interface.cpp.o] Error 1\n'}
+[2.236815] (my_hardware_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_hardware_interface.dir/all] Error 2\n'}
+[2.236904] (my_hardware_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.238587] (my_hardware_interface) CommandEnded: {'returncode': 2}
+[2.264219] (my_hardware_interface) JobEnded: {'identifier': 'my_hardware_interface', 'rc': 2}
+[2.274912] (-) EventReactorShutdown: {}

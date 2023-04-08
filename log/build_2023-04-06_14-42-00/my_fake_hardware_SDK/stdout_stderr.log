@@ -1,0 +1,68 @@
+-- The C compiler identification is GNU 11.3.0
+-- The CXX compiler identification is GNU 11.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+WARNING: Package name "my_fake_hardware_SDK" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/user/ros2_control_example/src/my_fake_hardware_SDK/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/ros2_control_example/build/my_fake_hardware_SDK
+[ 50%] [32mBuilding CXX object CMakeFiles/my_fake_hardware_SDK.dir/src/my_fake_hardware_SDK.cpp.o[0m
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::read_position_data(int, double, std::string)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:63:66:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Koutput[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-parameter-Wunused-but-set-parameter]8;;[m[K]
+   63 | MyFakeHardware::read_position_data(int component_id, [01;35m[Kdouble output[m[K, std::string Log)
+      |                                                      [01;35m[K~~~~~~~^~~~~~[m[K
+
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::read_velocity_data(int, double, std::string)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:73:66:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Koutput[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-parameter-Wunused-but-set-parameter]8;;[m[K]
+   73 | MyFakeHardware::read_velocity_data(int component_id, [01;35m[Kdouble output[m[K, std::string Log)
+      |                                                      [01;35m[K~~~~~~~^~~~~~[m[K
+
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::read_effort_data(int, double, std::string)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:83:64:[m[K [01;35m[Kwarning: [m[Kparameter ‘[01m[Koutput[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-parameter-Wunused-but-set-parameter]8;;[m[K]
+   83 | l MyFakeHardware::read_effort_data(int component_id, [01;35m[Kdouble output[m[K, std::string Log)
+      |                                                      [01;35m[K~~~~~~~^~~~~~[m[K
+
+[100%] [32m[1mLinking CXX static library libmy_fake_hardware_SDK.a[0m
+[100%] Built target my_fake_hardware_SDK
+-- Install configuration: ""
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/lib/libmy_fake_hardware_SDK.a
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/include
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/include/my_fake_hardware_SDK
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/include/my_fake_hardware_SDK/my_fake_hardware_SDK.hpp
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/library_path.sh
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/library_path.dsv
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/ament_index/resource_index/package_run_dependencies/my_fake_hardware_SDK
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/ament_index/resource_index/parent_prefix_path/my_fake_hardware_SDK
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/ament_prefix_path.sh
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/ament_prefix_path.dsv
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/path.sh
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/environment/path.dsv
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.bash
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.sh
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.zsh
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/local_setup.dsv
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/package.dsv
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/ament_index/resource_index/packages/my_fake_hardware_SDK
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/my_fake_hardware_SDKConfig.cmake
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/cmake/my_fake_hardware_SDKConfig-version.cmake
+-- Installing: /home/user/ros2_control_example/install/my_fake_hardware_SDK/share/my_fake_hardware_SDK/package.xml

@@ -1,0 +1,4 @@
+source;share/my_fake_hardware_SDK/local_setup.bash
+source;share/my_fake_hardware_SDK/local_setup.dsv
+source;share/my_fake_hardware_SDK/local_setup.sh
+source;share/my_fake_hardware_SDK/local_setup.zsh

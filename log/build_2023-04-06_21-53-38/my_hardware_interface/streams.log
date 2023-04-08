@@ -1,0 +1,58 @@
+[0.011s] Invoking command in '/home/user/ros2_control_example/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target my_hardware_interface[0m
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/my_hardware_interface.dir/src/my_hardware_interface.cpp.o[0m
+[1.783s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn my_hardwares::MyHardware::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[1.783s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:124:72:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.783s]   124 | CallbackReturn MyHardware::on_activate([01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+[1.783s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.783s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn my_hardwares::MyHardware::on_deactivate(const rclcpp_lifecycle::State&)[m[K’:
+[1.783s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:147:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.783s]   147 | CallbackReturn MyHardware::on_deactivate([01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+[1.783s]       |                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[1.783s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type my_hardwares::MyHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.783s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:156:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.784s]   156 | return_type MyHardware::read([01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period)
+[1.784s]       |                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.784s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:156:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.784s]   156 | return_type MyHardware::read(const rclcpp::Time & time, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[1.784s]       |                                                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.785s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type my_hardwares::MyHardware::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.785s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:174:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.785s]   174 | return_type MyHardware::write([01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period)
+[1.785s]       |                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.785s] [01m[K/home/user/ros2_control_example/src/my_hardware_interface/src/my_hardware_interface.cpp:174:83:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.785s]   174 | return_type MyHardware::write(const rclcpp::Time & time, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[1.785s]       |                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.662s] [100%] [32m[1mLinking CXX shared library libmy_hardware_interface.so[0m
+[2.985s] [100%] Built target my_hardware_interface
+[2.992s] Invoked command in '/home/user/ros2_control_example/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/user/ros2_control_example/build/my_hardware_interface -- -j8 -l8
+[3.011s] Invoking command in '/home/user/ros2_control_example/build/my_hardware_interface': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/my_hardware_interface
+[3.016s] -- Install configuration: ""
+[3.016s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/my_hardwares.xml
+[3.017s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/lib/libmy_hardware_interface.so
+[3.018s] -- Set runtime path of "/home/user/ros2_control_example/install/my_hardware_interface/lib/libmy_hardware_interface.so" to ""
+[3.018s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/include
+[3.018s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/include/my_hardware_interface
+[3.018s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/include/my_hardware_interface/my_hardware_interface.hpp
+[3.018s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.sh
+[3.018s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/library_path.dsv
+[3.019s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/package_run_dependencies/my_hardware_interface
+[3.019s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/parent_prefix_path/my_hardware_interface
+[3.019s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.sh
+[3.020s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/ament_prefix_path.dsv
+[3.020s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/path.sh
+[3.021s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/environment/path.dsv
+[3.021s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.bash
+[3.022s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.sh
+[3.022s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.zsh
+[3.022s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/local_setup.dsv
+[3.023s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/package.dsv
+[3.023s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/packages/my_hardware_interface
+[3.023s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_hardware_interface
+[3.024s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.024s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[3.024s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.025s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig.cmake
+[3.025s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/cmake/my_hardware_interfaceConfig-version.cmake
+[3.025s] -- Installing: /home/user/ros2_control_example/install/my_hardware_interface/share/my_hardware_interface/package.xml
+[3.027s] Invoked command in '/home/user/ros2_control_example/build/my_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK:/opt/ros/humble LD_LIBRARY_PATH=/home/user/ros2_control_example/install/my_fake_hardware_SDK/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/user/ros2_control_example/build/my_hardware_interface

@@ -1,0 +1,26 @@
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::init(std::string, int, int, char**)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:6:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+    6 |         (*Log) = [01;35m[K"Fail to connect with port"[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:10:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   10 |         (*Log) = [01;35m[K"Baud rate is not corret."[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:14:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   14 |         (*Log) = [01;35m[K"Number of Joints must be more than 0."[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::ping(int, char**)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:27:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   27 |         (*Log) = [01;35m[K"Pin fail with invalid ID."[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::write_position_data(int, double, char**)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:36:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   36 |         (*Log) = [01;35m[K"Writing position data fail with invalid ID."[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::write_velocity_data(int, double, char**)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:46:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   46 |         (*Log) = [01;35m[K"Writing velocity data fail with invalid ID."[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:[m[K In member function ‘[01m[Kbool MyFakeHardware::write_effort_data(int, double, char**)[m[K’:
+[01m[K/home/user/ros2_control_example/src/my_fake_hardware_SDK/src/my_fake_hardware_SDK.cpp:56:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   56 |         (*Log) = [01;35m[K"Writing effort data fail with invalid ID."[m[K;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

@@ -702,8 +702,8 @@ CMakeFiles/my_controller.dir/src/my_controller.cpp.o: /home/user/ros2_control_ex
   /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/transition.hpp \
   /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node_impl.hpp \
   /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_publisher.hpp \
-  /opt/ros/humble/include/realtime_tools/realtime_buffer.h \
-  /opt/ros/humble/include/realtime_tools/realtime_publisher.h \
+  /opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h \
+  /opt/ros/humble/include/realtime_tools/realtime_tools/realtime_publisher.h \
   /opt/ros/humble/include/control_msgs/control_msgs/msg/joint_controller_state.hpp \
   /opt/ros/humble/include/control_msgs/control_msgs/msg/detail/joint_controller_state__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
@@ -745,8 +745,6 @@ CMakeFiles/my_controller.dir/src/my_controller.cpp.o: /home/user/ros2_control_ex
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
 
 /opt/ros/humble/include/control_msgs/control_msgs/msg/detail/joint_controller_state__struct.hpp:
-
-/opt/ros/humble/include/realtime_tools/realtime_publisher.h:
 
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/managed_entity.hpp:
 
@@ -1179,6 +1177,8 @@ CMakeFiles/my_controller.dir/src/my_controller.cpp.o: /home/user/ros2_control_ex
 /usr/include/asm-generic/errno-base.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
+
+/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_buffer.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
 
@@ -1682,8 +1682,6 @@ CMakeFiles/my_controller.dir/src/my_controller.cpp.o: /home/user/ros2_control_ex
 
 /usr/include/c++/11/streambuf:
 
-/opt/ros/humble/include/realtime_tools/realtime_buffer.h:
-
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
@@ -2081,6 +2079,8 @@ CMakeFiles/my_controller.dir/src/my_controller.cpp.o: /home/user/ros2_control_ex
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
+
+/opt/ros/humble/include/realtime_tools/realtime_tools/realtime_publisher.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_subscription.hpp:
 

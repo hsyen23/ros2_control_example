@@ -1,0 +1,10 @@
+<library path="my_hardware_interface">
+  <class name="my_hardwares/MyHardware"
+         type="my_hardwares::MyHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      My hardware interface plugin for ros2_control
+    </description>
+  </class>
+</library>
+
